@@ -1,12 +1,45 @@
+/*Grid-container for å lage layout og strukturere innholdet*/
 .container {
     display: grid;
-    grid-template-rows: 1fr 200px 200px 1fr;
-    grid-template-columns: 1fr 30% 30% 1fr;
+    grid-template-rows: minmax(300px, auto);
+    grid-template-columns: 1fr minmax(40%, 1fr) minmax(40%, 1fr) 1fr;;
+    row-gap: 5rem;
+    column-gap: 2rem;
 }
+/*Første og fjerde kolonne (1fr) fungerer som marger, andre og tredje kolonne har hovedinnhold. Begrenses til å ta opp minst 30% av siden og vokse om nødvendig, men er begrenset til tilgjengelig plass.*/
 
 section {
-    background-color: blueviolet;
-    text-align: center;
     border-style: solid;
-    border-color: black;
+    border-color: grey;
+}
+
+.column-1 {
+    grid-column: 2; /* Plasserer første kolonne i andre grid-kolonne for å midtstille */
+    padding: 20px;
+  }
+
+.column-2 {
+    grid-column: 3; /* Plasserer andre kolonne i tredje grid-kolonne for å midtstille */
+    padding: 20px;
+  }
+
+/*Klasse for seksjoner som skal ha full bredde (to kolonner i stedet for en)*/
+.full-width {
+    grid-column: 2 / span 2; /* Strekker seg over både kolonne 2 og 3 */
+    padding: 20px;
+}
+
+/*Beholder for tre horisontale kolonner*/
+.three-columns {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px;
+}
+
+/*Horisontale kolonner*/
+.column {
+    flex: 1; /* Hver kolonne opptar like mye plass */
+    margin: 0 10px;
+    padding: 20px;
+    border: 2px solid #dac0ed;
 }
