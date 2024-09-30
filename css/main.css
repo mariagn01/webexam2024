@@ -1,0 +1,12 @@
+.container {
+    display: grid;
+    grid-template-rows: 1fr 200px 200px 1fr;
+    grid-template-columns: 1fr 30% 30% 1fr;
+}
+
+section {
+    background-color: blueviolet;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+}
