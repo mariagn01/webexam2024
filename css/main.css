@@ -93,20 +93,19 @@ section {
     border: 2px solid #dac0ed;
 }
 
-
-footer{
-    background-color: #dac0ed;
-    padding: 0px;
-    margin: 0px;
-}
-
-.flex-layout {
+.footer-wrapper{
     display: flex;
-    justify-content: center; /*midtstiller innholdet*/
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dac0ed;
+    padding: 60px;
+    /*generell stil på footer*/
 }
 
-.container-footer{
-    width: 30%; /*Definerer bredden i footer*/
+.footer-logo-section{
+    flex: 1;
+    text-align: left;
+    /*Plasserer logoen til venstre i footer*/
 }
 
 .footer-logo{
@@ -114,23 +113,54 @@ footer{
     width: auto; /* Behold bildeproporsjonene */
 }
 
-
-footer{
-    background-color: #dac0ed;
-    padding: 0px;
-    margin: 0px;
+.footer-address-section {
+    flex: 1;
+    text-align: center;
+    /*Plasserer adressen i midten i footer*/
 }
 
-.flex-layout {
-    display: flex;
-    justify-content: center; /*midtstiller innholdet*/
+.footer-address-text {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    /*Redigerer tekst-adressen*/
 }
 
-.container-footer{
-    width: 30%; /*Definerer bredden i footer*/
+.footer-social-contact-section {
+    flex: 1;
+    text-align: right;
+    /*Plasserer sosiale medier og kontakt til høyre i footer*/
 }
 
-.footer-logo{
-    height: 100px; /* Juster høyden på logoen */
-    width: auto; /* Behold bildeproporsjonene */
+.footer-social-media {
+    margin-bottom: 5px;
+}
+
+.footer-social-media a:not(:last-child){
+    margin-right: 10px; /* Lager mellomrom mellom sosiale medier ikonene */
+}
+
+.social-media-logo {
+    width: 30px;
+    height: auto;
+    /* Justerer størrelsene på ikonene */
+}
+
+.footer-contact-info {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+/* Responsive adjustments - FIKSE */
+@media (max-width: 768px) {
+    .footer-wrapper {
+        flex-direction: column; /* Stack items vertically on small screens */
+        text-align: center;
+    }
+
+    .footer-logo-section, .footer-address-section, .footer-social-contact-section {
+        flex: none;
+        margin-bottom: 10px; /* Space between stacked sections */
+    }
 }
