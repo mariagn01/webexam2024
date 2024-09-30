@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .container {
     display: grid;
     grid-template-rows: 1fr 200px 200px 1fr;
@@ -9,4 +10,13 @@ section {
     text-align: center;
     border-style: solid;
     border-color: black;
+=======
+h1{
+    text-align: center;
+}
+
+.navbar ul{
+    list-style-type: none; /* Fjerner punktene */
+    background-color: #dac0ed;
+>>>>>>> Stashed changes
 }
