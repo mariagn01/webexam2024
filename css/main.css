@@ -135,8 +135,14 @@ footer{
     width: auto; /* Behold bildeproporsjonene */
 }
 
-#bulletpoints ul {
+#bulletpoints ul, #valgemner ul {
     list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px; /* Mellomrom mellom liste-elementene */
 }
 
 /*Styling av tabell med studiets oppbygning*/
@@ -146,7 +152,7 @@ footer{
 }
 
 #studieløp th, #studieløp td {
-    border: 1px solid #333; /* Ramme for celler */
+    border: 1px solid #aeaeae; /* Ramme for celler */
     padding: 8px;
     text-align: left;
 }
