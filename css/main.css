@@ -1,4 +1,51 @@
-<<<<<<< Updated upstream
+body{
+    margin: 0px;
+}
+h1{
+    text-align: center;
+}
+
+header{
+    background-color: #dac0ed;
+    padding-bottom: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Plasserer logoen til venstre og lenkene til høyre */
+    align-items: center; /* Vertikal sentrering av logoen og lenkene */
+    padding: 10px 20px;
+}
+
+.logo img{
+    height: 50px; /* Juster høyden på logoen */
+    width: auto; /* Behold bildeproporsjonene */
+}
+
+.navbar ul{
+    list-style-type: none; /* Fjerner punktene */
+    padding: 0px; /*Fjerner padding */
+    margin: 0px; /*Fjerner margin */
+    display: flex; /*Setter lenkene på en rad*/
+    gap: 20px; /* Avstand mellom lenkene */
+}
+
+.navbar a{
+    color: #000000;
+    text-decoration: none; /*Fjerner underline*/
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: #f1e1fc; /*gjør bakgrunnsfargen lysere når musen peker der*/
+}
+
+.navbar li{
+    display: inline-block;
+}
+
 .container {
     display: grid;
     grid-template-rows: 1fr 200px 200px 1fr;
@@ -10,13 +57,4 @@ section {
     text-align: center;
     border-style: solid;
     border-color: black;
-=======
-h1{
-    text-align: center;
-}
-
-.navbar ul{
-    list-style-type: none; /* Fjerner punktene */
-    background-color: #dac0ed;
->>>>>>> Stashed changes
 }
