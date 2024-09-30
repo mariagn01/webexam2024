@@ -138,3 +138,19 @@ footer{
 #bulletpoints ul {
     list-style-type: none;
 }
+
+/*Styling av tabell med studiets oppbygning*/
+#studieløp table {
+    width: 100%;
+    border-collapse: collapse; /* Slå sammen rammer */
+}
+
+#studieløp th, #studieløp td {
+    border: 1px solid #333; /* Ramme for celler */
+    padding: 8px;
+    text-align: left;
+}
+
+#studieløp th {
+    background-color: #dac0ed;
+}
