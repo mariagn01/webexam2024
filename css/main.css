@@ -56,12 +56,6 @@ header{
 }
 /*Første og fjerde kolonne (1fr) fungerer som marger, andre og tredje kolonne har hovedinnhold. Begrenses til å ta opp minst 30% av siden og vokse om nødvendig, men er begrenset til tilgjengelig plass.*/
 
-section {
-    border-style: solid;
-    
-    border-color: grey;
-}
-
 .column-1 {
     grid-column: 2; /* Plasserer første kolonne i andre grid-kolonne for å midtstille */
     padding: 20px;
@@ -90,6 +84,9 @@ section {
     flex: 1; /* Hver kolonne opptar like mye plass */
     margin: 0 10px;
     padding: 20px;
+}
+
+.full-width .column {
     border: 2px solid #dac0ed;
 }
 
@@ -139,6 +136,15 @@ footer{
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
+}
+
+#bulletpoints img{
+    max-width: 10%;
+}
+
+#bulletpoints li {
+    font-size: 1.2rem;
+    font-family: sans-serif;
 }
 
 ul li {
