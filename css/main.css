@@ -134,3 +134,7 @@ footer{
     height: 100px; /* Juster høyden på logoen */
     width: auto; /* Behold bildeproporsjonene */
 }
+
+#bulletpoints ul {
+    list-style-type: none;
+}
