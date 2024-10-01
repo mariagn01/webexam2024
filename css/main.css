@@ -1,3 +1,9 @@
+:root {
+    --primary: #dac0ed;
+    --secondary: #96dffa; 
+    --third: #c0ecfc;
+}   
+
 body{
     margin: 0px;
 }
@@ -5,10 +11,17 @@ h1{
     text-align: center;
 }
 
-header{
-    background-color: #dac0ed;
+header {
+    background-color: var(--primary);
     padding-bottom: 20px;
+    position: sticky;
+    top: 0;
 }
+
+.header-activity{
+    background-color: var(--secondary);
+}
+
 
 .navbar {
     display: flex;
@@ -42,8 +55,21 @@ header{
     background-color: #f1e1fc; /*gjør bakgrunnsfargen lysere når musen peker der*/
 }
 
+.navbar-activity a:hover{
+    background-color: var(--third);
+}
+
+
 .navbar li{
     display: inline-block;
+}
+
+.a-active{
+    background-color: #f1e1fc; /*gjør bakgrunnsfargen lysere når musen peker der*/
+}
+
+.a-active-activity {
+    background-color: var(--third);
 }
 
 /*Grid-container for å lage layout og strukturere innholdet*/
@@ -151,6 +177,25 @@ section {
     font-size: 14px;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 4rem 0;
+}
+
+.flex-box {
+    width: 40%;
+}
+
+.img-activity {
+    width: 100%;
+}
+
+.main-activity {
+    margin: 0 10%;
+}
+
 
 /* Responsive adjustments - FIKSE */
 @media (max-width: 768px) {
@@ -162,5 +207,15 @@ section {
     .footer-logo-section, .footer-address-section, .footer-social-contact-section {
         flex: none;
         margin-bottom: 10px; /* Space between stacked sections */
+    }
+
+    .flex-container {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .flex-box {
+        margin: 2rem 0;
+        width: 100%;
     }
 }
