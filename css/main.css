@@ -11,6 +11,11 @@ h1{
     text-align: center;
 }
 
+ul li {
+    margin-bottom: 10px; /* Mellomrom mellom liste-elementene */
+}
+
+/*Header*/
 header {
     background-color: var(--primary);
     padding-bottom: 5px 0;
@@ -72,15 +77,16 @@ header {
     background-color: var(--third);
 }
 
+/*Hovedinnhold - index.html*/
 /*Grid-container for å lage layout og strukturere innholdet*/
 .container {
     display: grid;
     grid-template-rows: minmax(300px, auto);
     grid-template-columns: 1fr minmax(40%, 1fr) minmax(40%, 1fr) 1fr;;
-    row-gap: 5rem;
+    row-gap: 2rem;
     column-gap: 2rem;
 }
-/*Første og fjerde kolonne (1fr) fungerer som marger, andre og tredje kolonne har hovedinnhold. Begrenses til å ta opp minst 30% av siden og vokse om nødvendig, men er begrenset til tilgjengelig plass.*/
+/*Første og fjerde kolonne (1fr) fungerer som marger, andre og tredje kolonne har hovedinnhold. Begrenses til å ta opp minst 30% av siden og vokse om nødvendig, men ikke utover tilgjengelig plass.*/
 
 .column-1 {
     grid-column: 2; /* Plasserer første kolonne i andre grid-kolonne for å midtstille */
@@ -92,20 +98,24 @@ header {
     padding: 20px;
   }
 
-/*Klasse for seksjoner som skal ha full bredde (to kolonner i stedet for en)*/
+.container section {
+    padding: 1rem;
+}
+
+/*Seksjoner som skal ha full bredde og ta opp begge kolonner i stedet for en*/
 .full-width {
     grid-column: 2 / span 2; /* Strekker seg over både kolonne 2 og 3 */
     padding: 20px;
 }
 
-/*Beholder for tre horisontale kolonner*/
-.three-columns {
+/*Beholder for indre horisontale kolonner*/
+.inner-columns {
     display: flex; 
     justify-content: space-between; 
     padding: 20px;
 }
 
-/*Horisontale kolonner*/
+/*Indre kolonner*/
 .column {
     flex: 1; /* Hver kolonne opptar like mye plass */
     margin: 0 10px;
@@ -116,6 +126,39 @@ header {
     border: 2px solid #dac0ed;
 }
 
+/*Punkter under studieinformasjon + ikoner foran*/
+#bulletpoints ul, #valgemner ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#bulletpoints img{
+    max-width: 10%;
+}
+
+#bulletpoints li {
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+/*Styling av tabell med studiets oppbygning*/
+#studieløp table {
+    width: 100%;
+    border-collapse: collapse; /* Slå sammen rammer */
+}
+
+#studieløp th, #studieløp td {
+    border: 1px solid #aeaeae; /* Ramme for celler */
+    padding: 8px;
+    text-align: left;
+}
+
+#studieløp th {
+    background-color: #dac0ed;
+}
+
+/*Footer*/
 .footer-wrapper{
     display: flex;
     justify-content: space-between;
@@ -215,45 +258,5 @@ header {
         margin: 2rem 0;
         width: 100%;
     }
-}
-
-#bulletpoints ul, #valgemner ul {
-    list-style-type: none;
-    margin-left: 0;
-    padding-left: 0;
-}
-
-#bulletpoints img{
-    max-width: 10%;
-}
-
-#bulletpoints li {
-    font-size: 1.2rem;
-    font-family: sans-serif;
-}
-
-ul li {
-    margin-bottom: 10px; /* Mellomrom mellom liste-elementene */
-}
-
-/*Styling av tabell med studiets oppbygning*/
-#studieløp table {
-    width: 100%;
-    border-collapse: collapse; /* Slå sammen rammer */
-}
-
-#studieløp th, #studieløp td {
-    border: 1px solid #aeaeae; /* Ramme for celler */
-    padding: 8px;
-    text-align: left;
-}
-
-#studieløp th {
-    background-color: #dac0ed;
-}
-
-
-#bulletpoints ul {
-    list-style-type: none;
 }
 
