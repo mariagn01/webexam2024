@@ -1,6 +1,6 @@
 :root {
     --primary: #dac0ed;
-    --secondary: #96dffa; 
+    --secondary: #b2e4f8; 
     --third: #c0ecfc;
 }   
 
@@ -9,17 +9,18 @@ body{
 }
 h1{
     text-align: center;
+    padding-bottom: 40px;
 }
 
 header {
     background-color: var(--primary);
-    padding-bottom: 20px;
-    position: sticky;
-    top: 0;
+    padding-bottom: 5px 0;
 }
 
 .header-activity{
     background-color: var(--secondary);
+    position: sticky;
+    top: 0;
 }
 
 
@@ -27,7 +28,7 @@ header {
     display: flex;
     justify-content: space-between; /* Plasserer logoen til venstre og lenkene til høyre */
     align-items: center; /* Vertikal sentrering av logoen og lenkene */
-    padding: 10px 20px;
+    padding: 0px 20px;
 }
 
 .logo img{
@@ -46,7 +47,7 @@ header {
 .navbar a{
     color: #000000;
     text-decoration: none; /*Fjerner underline*/
-    padding: 15px;
+    padding: 10px 5px;
     display: block;
     text-align: center;
 }
@@ -123,9 +124,16 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #dac0ed;
     padding: 60px;
     /*generell stil på footer*/
+}
+
+.footer-blue {
+    background-color: var(--secondary);
+}
+
+.footer-purple {
+    background-color: var(--primary);
 }
 
 .footer-logo-section{
