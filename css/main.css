@@ -109,7 +109,7 @@ header {
   }
 
 .container section {
-    padding: 1rem;
+    padding: 1rem;  /*Padding i seksjonene*/
 }
 
 /*Seksjoner som skal ha full bredde og ta opp begge kolonner i stedet for en*/
@@ -132,22 +132,25 @@ header {
     padding: 20px;
 }
 
+/*Kantlinje rundt spesialiseringene*/
 .full-width .column {
     border: 2px solid #dac0ed;
 }
 
-/*Punkter under studieinformasjon + ikoner foran*/
-#bulletpoints ul, #valgemner ul {
+/*Standard klasse for en liste uten kulepunkter og innrykk*/
+.nobullet-list {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
 }
 
-#bulletpoints img{
+/*Ikoner*/
+#facts img{
     max-width: 10%;
 }
 
-#bulletpoints li {
+/*Skrift i punktene med fakta*/
+#facts li {
     font-size: 1rem;
     font-family: sans-serif;
 }
