@@ -13,7 +13,7 @@
                 <img src="img/header-footer/oslometLogo.png" alt="Oslomet logo">
             </a>
             <ul>
-              <li><a href="forside.html">Forside</a></li>
+              <li><a class="a-active" href="index.html">Forside</a></li>
               <li><a href="activity.html">Foreninger</a></li>
               <li><a href="accessibility.html">Accessibility</a></li>
               <li><a href="github.html">Github</a></li>
@@ -261,35 +261,38 @@
         <!--Use <aside> for related information that complements the main content, such as links to other programs or quick facts-->
       </main>
       <footer>
-        <section class="flex-layout">
-            <img src="img/header-footer/oslometLogo.png" alt="Oslomet logo" class="footer-logo">
-            
-            <!-- OsloMet Adresse -->
-            <p class="end-text footer-adress container-footer">OSLO METROPOLITAN
-                UNIVERSITY<br>STORBYUNIVERSITETET<br>Postboks 4, ST. Olavsplass<br>0130 Oslo
-            </p>
+        <section class="footer-wrapper">
 
-            <div class="container-footer">
-                <nav class="flex-layout">
-                    <!-- Navbar med lenker til sosiale medier -->
-                    <a href="https://www.facebook.com/oslomet/"><img
-                            src="img/header-footer/facebook-logo.svg" alt="Facebook logo"
-                            class="logo-footer"></a>
-                    <a href="https://twitter.com/oslomet"><img
-                            src="img/header-footer/twitter-logo.svg" alt="Twitter logo"
-                            class="logo-footer"></a>
-                    <a href="https://no.linkedin.com/school/oslomet/"><img
-                            src="img/header-footer/linkedin-logo.svg" alt="Linkedin logo"
-                            class="logo-footer"></a>
-                    <a href="https://www.instagram.com/oslomet/?hl=nb"><img
-                            src="img/header-footer/instagram-logo.svg"
-                            alt="Instagram logo" class="logo-footer"></a>
+
+            <!--Oslomet sin logo-->
+            <div class="footer-logo-section">
+                <img src="img/header-footer/oslometLogo.png" alt="Oslomet logo" class="footer-logo">
+            </div>
+
+
+            <!-- OsloMet sin adresse -->
+            <div class="footer-address-section">
+                <p class="footer-address-text">
+                    OSLO METROPOLITAN UNIVERSITY<br>
+                    STORBYUNIVERSITETET<br>
+                    Postboks 4, ST. Olavsplass<br>
+                    0130 Oslo
+                </p>
+            </div>
+
+             <!-- Sosiale medier og kontakt Oslomet -->
+            <div class="footer-social-contact-section">
+                <nav class="footer-social-media">
+                    <a href="https://www.facebook.com/oslomet/"><img src="img/header-footer/facebook-logo.svg" alt="Facebook logo" class="social-media-logo"></a>
+                    <a href="https://twitter.com/oslomet"><img src="img/header-footer/twitter-logo.svg" alt="Twitter logo" class="social-media-logo"></a>
+                    <a href="https://no.linkedin.com/school/oslomet/"><img src="img/header-footer/linkedin-logo.svg" alt="Linkedin logo" class="social-media-logo"></a>
+                    <a href="https://www.instagram.com/oslomet/?hl=nb"><img src="img/header-footer/instagram-logo.svg" alt="Instagram logo" class="social-media-logo"></a>
                 </nav>
-                <!-- Kontakt oss + telefonnummer -->
-                <p class="center-text footer-contact"><strong>Våre sosiale medier<br>KONTAKT OSS</strong><br><a
-                        href="tel: +4767235000">Tlf.: 67 23
-                        50 00</a>
-                </div>
+                <p class="footer-contact-info">
+                    <strong>Våre sosiale medier<br>KONTAKT OSS</strong><br>
+                    <a href="tel:+4767235000">Tlf.: 67 23 50 00</a>
+                </p>
+            </div>
         </section>
       </footer>
 </body>
