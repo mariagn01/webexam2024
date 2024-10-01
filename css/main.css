@@ -5,6 +5,11 @@ h1{
     text-align: center;
 }
 
+ul li {
+    margin-bottom: 10px; /* Mellomrom mellom liste-elementene */
+}
+
+/*Header*/
 header{
     background-color: #dac0ed;
     padding-bottom: 20px;
@@ -46,6 +51,7 @@ header{
     display: inline-block;
 }
 
+/*Hovedinnhold - index.html*/
 /*Grid-container for å lage layout og strukturere innholdet*/
 .container {
     display: grid;
@@ -54,7 +60,7 @@ header{
     row-gap: 5rem;
     column-gap: 2rem;
 }
-/*Første og fjerde kolonne (1fr) fungerer som marger, andre og tredje kolonne har hovedinnhold. Begrenses til å ta opp minst 30% av siden og vokse om nødvendig, men er begrenset til tilgjengelig plass.*/
+/*Første og fjerde kolonne (1fr) fungerer som marger, andre og tredje kolonne har hovedinnhold. Begrenses til å ta opp minst 30% av siden og vokse om nødvendig, men ikke utover tilgjengelig plass.*/
 
 .column-1 {
     grid-column: 2; /* Plasserer første kolonne i andre grid-kolonne for å midtstille */
@@ -66,20 +72,20 @@ header{
     padding: 20px;
   }
 
-/*Klasse for seksjoner som skal ha full bredde (to kolonner i stedet for en)*/
+/*Seksjoner som skal ha full bredde og ta opp begge kolonner i stedet for en*/
 .full-width {
     grid-column: 2 / span 2; /* Strekker seg over både kolonne 2 og 3 */
     padding: 20px;
 }
 
-/*Beholder for tre horisontale kolonner*/
-.three-columns {
+/*Beholder for indre horisontale kolonner*/
+.inner-columns {
     display: flex; 
     justify-content: space-between; 
     padding: 20px;
 }
 
-/*Horisontale kolonner*/
+/*Indre kolonner*/
 .column {
     flex: 1; /* Hver kolonne opptar like mye plass */
     margin: 0 10px;
@@ -90,48 +96,7 @@ header{
     border: 2px solid #dac0ed;
 }
 
-
-footer{
-    background-color: #dac0ed;
-    padding: 0px;
-    margin: 0px;
-}
-
-.flex-layout {
-    display: flex;
-    justify-content: center; /*midtstiller innholdet*/
-}
-
-.container-footer{
-    width: 30%; /*Definerer bredden i footer*/
-}
-
-.footer-logo{
-    height: 100px; /* Juster høyden på logoen */
-    width: auto; /* Behold bildeproporsjonene */
-}
-
-
-footer{
-    background-color: #dac0ed;
-    padding: 0px;
-    margin: 0px;
-}
-
-.flex-layout {
-    display: flex;
-    justify-content: center; /*midtstiller innholdet*/
-}
-
-.container-footer{
-    width: 30%; /*Definerer bredden i footer*/
-}
-
-.footer-logo{
-    height: 100px; /* Juster høyden på logoen */
-    width: auto; /* Behold bildeproporsjonene */
-}
-
+/*Punkter under studieinformasjon + ikoner foran*/
 #bulletpoints ul, #valgemner ul {
     list-style-type: none;
     margin-left: 0;
@@ -145,10 +110,6 @@ footer{
 #bulletpoints li {
     font-size: 1.2rem;
     font-family: sans-serif;
-}
-
-ul li {
-    margin-bottom: 10px; /* Mellomrom mellom liste-elementene */
 }
 
 /*Styling av tabell med studiets oppbygning*/
@@ -165,4 +126,46 @@ ul li {
 
 #studieløp th {
     background-color: #dac0ed;
+}
+
+/*Footer*/
+footer{
+    background-color: #dac0ed;
+    padding: 0px;
+    margin: 0px;
+}
+
+.flex-layout {
+    display: flex;
+    justify-content: center; /*midtstiller innholdet*/
+}
+
+.container-footer{
+    width: 30%; /*Definerer bredden i footer*/
+}
+
+.footer-logo{
+    height: 100px; /* Juster høyden på logoen */
+    width: auto; /* Behold bildeproporsjonene */
+}
+
+
+footer{
+    background-color: #dac0ed;
+    padding: 0px;
+    margin: 0px;
+}
+
+.flex-layout {
+    display: flex;
+    justify-content: center; /*midtstiller innholdet*/
+}
+
+.container-footer{
+    width: 30%; /*Definerer bredden i footer*/
+}
+
+.footer-logo{
+    height: 100px; /* Juster høyden på logoen */
+    width: auto; /* Behold bildeproporsjonene */
 }
