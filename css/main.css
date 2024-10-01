@@ -88,6 +88,39 @@ header {
 }
 
 /*Hovedinnhold - index.html*/
+
+/*Lenker i hovedinnholdet*/
+a:link {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #bc8ee0; 
+    text-underline-offset: 3px; /* Øker avstanden mellom tekst og strek */
+}
+
+/* Besøkt lenke */
+a:visited {
+    color: black; /* Sort tekst etter at lenken er besøkt */
+    text-decoration: underline;
+    text-decoration-color: #bc8ee0;
+    text-underline-offset: 3px;
+}
+
+/* Musepeker over link */
+a:hover {
+    color: var(--primary); /* Hold teksten sort også ved hover */
+    text-decoration: underline;
+    text-decoration-color: #bc8ee0;
+    text-underline-offset: 3px;
+}
+
+/* Aktiv link */
+a:active {
+    color: black; /* Sort tekst når lenken er aktiv */
+    text-decoration: underline;
+    text-decoration-color: #bc8ee0;
+    text-underline-offset: 3px;
+}
+
 /*Grid-container for å lage layout og strukturere innholdet*/
 .container {
     display: grid;
