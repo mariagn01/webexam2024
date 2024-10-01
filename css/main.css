@@ -57,7 +57,7 @@ header{
     display: grid;
     grid-template-rows: minmax(300px, auto);
     grid-template-columns: 1fr minmax(40%, 1fr) minmax(40%, 1fr) 1fr;;
-    row-gap: 5rem;
+    row-gap: 2rem;
     column-gap: 2rem;
 }
 /*Første og fjerde kolonne (1fr) fungerer som marger, andre og tredje kolonne har hovedinnhold. Begrenses til å ta opp minst 30% av siden og vokse om nødvendig, men ikke utover tilgjengelig plass.*/
@@ -71,6 +71,10 @@ header{
     grid-column: 3; /* Plasserer andre kolonne i tredje grid-kolonne for å midtstille */
     padding: 20px;
   }
+
+.container section {
+    padding: 1rem;
+}
 
 /*Seksjoner som skal ha full bredde og ta opp begge kolonner i stedet for en*/
 .full-width {
@@ -108,7 +112,7 @@ header{
 }
 
 #bulletpoints li {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: sans-serif;
 }
 
