@@ -7,8 +7,14 @@
 body{
     margin: 0px;
 }
+
 h1{
     text-align: center;
+    font-family: sans-serif;
+}
+
+h2, h3, p {
+    font-family: sans-serif;
 }
 
 ul li {
@@ -90,35 +96,39 @@ header {
 /*Hovedinnhold - index.html*/
 
 /*Lenker i hovedinnholdet*/
-a:link {
+main a:link {
     color: black;
     text-decoration: underline;
     text-decoration-color: #bc8ee0; 
     text-underline-offset: 3px; /* Øker avstanden mellom tekst og strek */
+    font-family: sans-serif;
 }
 
 /* Besøkt lenke */
-a:visited {
+main a:visited {
     color: black; /* Sort tekst etter at lenken er besøkt */
     text-decoration: underline;
     text-decoration-color: #bc8ee0;
     text-underline-offset: 3px;
+    font-family: sans-serif;
 }
 
 /* Musepeker over link */
-a:hover {
+main a:hover {
     color: var(--primary); /* Hold teksten sort også ved hover */
     text-decoration: underline;
     text-decoration-color: #bc8ee0;
     text-underline-offset: 3px;
+    font-family: sans-serif;
 }
 
 /* Aktiv link */
-a:active {
+main a:active {
     color: black; /* Sort tekst når lenken er aktiv */
     text-decoration: underline;
     text-decoration-color: #bc8ee0;
     text-underline-offset: 3px;
+    font-family: sans-serif;
 }
 
 /*Grid-container for å lage layout og strukturere innholdet*/
@@ -184,6 +194,7 @@ a:active {
 
 /*Skrift i punktene med fakta*/
 #facts li {
+    padding-top: 1rem;
     font-size: 1rem;
     font-family: sans-serif;
 }
