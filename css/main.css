@@ -7,9 +7,19 @@
 body{
     margin: 0px;
 }
+
 h1{
     text-align: center;
     padding-bottom: 40px;
+}
+
+.h1-activity{
+    font-size: 70px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #78cee6, #1975bc);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 header {
@@ -194,14 +204,54 @@ section {
 
 .flex-box {
     width: 40%;
+    text-align: center;
+}
+
+.flex-box p,h2,a {
+    padding: 10px;
+}
+
+p{
+    text-align: left;
+    /* Får teksten til å være sidestilt til venstre*/
+}
+
+.button{
+    background-color: var(--secondary);
+    color: #000000;
+    text-decoration: none; /*Fjerner underline*/
+    border-radius: 10px; /* Valgfritt: litt avrundede kanter */
 }
 
 .img-activity {
     width: 100%;
+    display: block; /* Unngå ekstra plass */
+    margin: 0; /* Fjerner marginer */
+    padding: 0; /* Fjerner padding */
+    animation-name: slideLeft;
+    animation-duration: 2s;
 }
 
 .main-activity {
     margin: 0 10%;
+}
+
+.flex-container:nth-child(odd) .img-activity {
+    animation: slideLeft 2s ease-out;
+}
+
+.flex-container:nth-child(even) .img-activity {
+    animation: slideRight 2s ease-out;
+}
+
+@keyframes slideLeft {
+    from {transform: translateX(-300%);} /* Starter langt til venstre */
+    to {transform: translateX(0);} /* Slutter på sin normale posisjon */
+}
+
+@keyframes slideRight {
+    from {transform: translateX(300%);} /* Starter langt til høyre */
+    to {transform: translateX(0);} /* Slutter på sin normale posisjon */
 }
 
 
