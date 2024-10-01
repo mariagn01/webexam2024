@@ -31,16 +31,24 @@
                 Det siste semesteret skriver du en bacheloroppgave tett knyttet til problemstillinger i arbeidslivet.
             </p>
         </section>
-        <section class="column-2 row-0" id="bulletpoints">
+        <section class="column-2 row-0 three-columns" id="bulletpoints">
+            <div class="column">
             <ul>
-                <li>Studiested: Pilestredet i Oslo</li>
-                <li>Varighet: 3 år</li>
-                <li>Omfang: Heltid</li>
-                <li>Studiepoeng: 180</li>
-                <li>Studiestart: August</li>
-                <li>Undervisningsspråk: Norsk og engelsk</li>
-                <li>Studieplasser: 40</li>
+                <li><img src="img/main/studiested.png"> Sted: Pilestredet i Oslo</li>
+                <li><img src="img/main/studienivå.png"> Nivå: Bachelorprogram</li>
+                <li><img src="img/main/varighet.png"> Varighet: 3 år</li>
+                <li><img src="img/main/omfang.png"> Omfang: Heltid</li>
             </ul>
+        </div>
+            <div class="column">
+                <ul>
+                    <li><img src="img/main/studiepoeng.png"> Studiepoeng: 180</li>
+                    <li><img src="img/main/studiestart.png"> Oppstart: August</li>
+                    <li><img src="img/main/språk.png"> Språk: Norsk og engelsk</li>
+                    <li><img src="img/main/studieplasser.png"> Studieplasser: 40</li>
+                </ul>
+            </div>
+            <!--Ikoner er laget av Dewi Sari og hentet fra: https://www.freepik.com/author/dewi-sari/icons/-->
         </section>
 
         <!--Studiestart-->
@@ -108,9 +116,133 @@
         </section>
 
         <!--Studiets oppbygning-->
-        <section class="full-width">
-            <p>Section 6</p>
+        <section class="full-width" id="studieløp">
+            <h2>Studieløp</h2>
+            <p>* Fordypningsemner etter hvilken spesialisering man velger</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>1. semester</th>
+                        <th>2. semester</th>
+                        <th>3. semester</th>
+                        <th>4. semester</th>
+                        <th>5. semester</th>
+                        <th>6. semester</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MAMO1100 Innføring i modeller og beregninger</td>
+                        <td>DAFE1000 Matematikk 1000</td>
+                        <td>DAPE2000 Matematikk 2000 med statistikk</td>
+                        <td>DAVE3705 Matematikk 4000</td>
+                        <td>DAVE3700 Matematikk 3000</td>
+                        <td>DATA3900 Bacheloroppgave</td>
+                    </tr>
+                    <tr>
+                        <td>DAPE1300 Diskret Matematikk</td>
+                        <td>DAPE2101 Fysikk og kjemi</td>
+                        <td>MAMO2100 Moderne fysikk</td>
+                        <td>*Matematikk og fysikk: MAMO2400 Termodynamikk og statistisk fysikk + MAMO2500 Symmetrier og algebraiske strukturer</td>
+                        <td>*Matematikk og fysikk: MAMO3300 Reell analyse + 1 valgemne</td>
+                        <td>*Matematikk og fysikk: 2 valgemner</td>
+                    </tr>
+                    <tr>
+                        <td>DAPE1400 Programmering</td>
+                        <td>DATA1500 Databaser</td>
+                        <td>*Matematikk og fysikk: MAMO2300 Lineær algebra og introduksjon til gruppeteori</td>
+                        <td>*Statistiske og datadrevne metoder: MAMO3100 Statistisk analyse + ADSE3200 Visualisering <b>eller</b> MAMO2200 Avansert modellering og beregninger</td>
+                        <td>*Statistiske og datadrevne metoder: DAVE3625 Introduksjon til Kunstig Intelligens + 1 valgemne</td>
+                        <td>*Statistiske og datadrevne metoder: 2 valgemner</td>
+                    </tr>
+                    <tr>
+                        <td>DATA1100 Teknologi og samfunn for programmerere</td>
+                        <td></td>
+                        <td>*Statistiske og datadrevne metoder eller *Vitenskapelige beregninger: DATS2300 Algoritmer og datastrukturer</td>
+                        <td>*Vitenskapelige beregninger: DAVE3606 Ressurseffektive programmer + MAMO2200 Avansert modellering og beregninger</td>
+                        <td>*Vitenskapelige beregninger: MAMO3200 Simulering og visualisering + 1 valgemne</td>
+                        <td>*Vitenskapelige beregninger: 2 valgemner</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Valgemner for spesialiseringene</h3>
+            <table id="valgemner">
+                <thead>
+                    <tr>
+                        <th colspan="3">5. Semester</th>
+                        <th colspan="3">6. Semester</th>
+                    </tr>
+                    <tr>
+                        <!--5. semester-->
+                        <th>Matematikk og fysikk</th>
+                        <th>Statistiske og datadrevne metoder</th>
+                        <th>Vitenskapelige beregninger</th>
+                        <!--6. semester-->
+                        <th>Matematikk og fysikk</th>
+                        <th>Statistiske og datadrevne metoder</th>
+                        <th>Vitenskapelige beregninger</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <!--5. semester, Matematikk og fysikk-->
+                            <ul>
+                                <li>DATA3730 Introduksjon til IT-forskning</li>
+                                <li>DATA3800 Introduction to Data Science with Scripting</li>
+                                <li>ITPE3100 Datasikkerhet</li>
+                                <li>MAMO3200 Simulering og visualisering</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <!--5. semester, Statistiske og datadrevne metoder-->
+                            <ul>
+                                <li>DATA3730 Introduksjon til IT-forskning</li>
+                                <li>DATA3750 Anvendt kunstig intelligens og data science prosjekt</li>
+                                <li>ITPE3100 Datasikkerhet</li>
+                                <li>MAMO3200 Simulering og visualisering</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <!--5. semester, Vitenskapelige beregninger-->
+                            <ul>
+                                <li>MAMO3200 Simulering og visualisering</li>
+                                <li>DATA3730 Introduksjon til IT-forskning</li>
+                                <li>MAMO2300 Lineær algebra og introduksjon til gruppeteori</li>
+                                <li>MAMO3300 Reell analyse</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <!--6. semester, Matematikk og fysikk-->
+                            <ul>
+                                <li>ADTS2310 Testing av programvare</li>
+                                <li>DATA2410 Datanettverk og skytjenester</li>
+                                <li>DAVE3606 Ressurseffektive programmer</li>
+                                <li>MAMO2200 Avansert modellering og beregninger</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <!--6. semester, Statistiske og datadrevne metoder-->
+                            <ul>
+                                <li>ADTS2310 Testing av programvare</li>
+                                <li>DATA2410 Datanettverk og skytjenester</li>
+                                <li>DAVE3606 Ressurseffektive programmer</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <!--6. semester, Vitenskapelige beregninger-->
+                            <ul>
+                                <li>ADSE3200 Visualisering</li>
+                                <li>ADTS2310 Testing av programvare</li>
+                                <li>DATA2410 Datanettverk og skytjenester</li>
+                                <li>MAMO2500 Symmetrier og algebraiske strukturer</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
+
         <section class="column-1 row-4">
             <p>Section 7</p>
         </section>
