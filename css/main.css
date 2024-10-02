@@ -6,6 +6,7 @@
 
 body{
     margin: 0px;
+    font-family: sans-serif;
 }
 
 h1{
@@ -13,12 +14,9 @@ h1{
     font-family: sans-serif;
 }
 
-h2, h3, p {
-    font-family: sans-serif;
-}
-
 ul li {
     margin-bottom: 10px; /* Mellomrom mellom liste-elementene */
+    font-family: sans-serif;
 }
 
 /*Skillelinje for å dele opp og strukturere innholdet på siden*/
