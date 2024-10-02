@@ -32,7 +32,7 @@ ul li {
 /*Header*/
 header {
     background-color: var(--primary);
-    padding-bottom: 20px;
+    padding-bottom: 5px 0;
     position: sticky;
     top: 0;
 }
@@ -46,11 +46,11 @@ header {
     display: flex;
     justify-content: space-between; /* Plasserer logoen til venstre og lenkene til høyre */
     align-items: center; /* Vertikal sentrering av logoen og lenkene */
-    padding: 10px 20px;
+    padding: 5px 20px;
 }
 
 .logo img{
-    height: 50px; /* Juster høyden på logoen */
+    height: 40px; /* Juster høyden på logoen */
     width: auto; /* Behold bildeproporsjonene */
 }
 
@@ -65,7 +65,7 @@ header {
 .navbar a{
     color: #000000;
     text-decoration: none; /*Fjerner underline*/
-    padding: 15px;
+    padding: 10px;
     display: block;
     text-align: center;
 }
