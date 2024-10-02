@@ -210,8 +210,13 @@ main a:active {
 }
 
 #studieløp th {
-    background-color: #dac0ed;
+    background-color: #dac0ed; /*Farge på tabellheader*/
 }
+
+.card {
+    background-color: var(--primary);
+}
+
 
 /*Footer*/
 .footer-wrapper{
