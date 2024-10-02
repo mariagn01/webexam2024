@@ -104,7 +104,7 @@ main a:link {
 
 /* Besøkt lenke */
 main a:visited {
-    color: black; /* Sort tekst etter at lenken er besøkt */
+    color: #4d1b74;
     text-decoration: underline;
     text-decoration-color: #bc8ee0;
     text-underline-offset: 3px;
@@ -113,7 +113,7 @@ main a:visited {
 
 /* Musepeker over link */
 main a:hover {
-    color: var(--primary); /* Hold teksten sort også ved hover */
+    color: #8046ad;
     text-decoration: underline;
     text-decoration-color: #bc8ee0;
     text-underline-offset: 3px;
@@ -122,7 +122,7 @@ main a:hover {
 
 /* Aktiv link */
 main a:active {
-    color: black; /* Sort tekst når lenken er aktiv */
+    color: black;
     text-decoration: underline;
     text-decoration-color: #bc8ee0;
     text-underline-offset: 3px;
@@ -174,7 +174,7 @@ main a:active {
 }
 
 /*Kantlinje rundt spesialiseringene*/
-.full-width .column {
+#spesialiseringer .column {
     border: 2px solid #dac0ed;
 }
 
@@ -210,11 +210,25 @@ main a:active {
 }
 
 #studieløp th {
-    background-color: #dac0ed; /*Farge på tabellheader*/
+    background-color: var(--primary); /*Farge på tabellheader*/
 }
 
+/*Studenthistorier*/
 .card {
-    background-color: var(--primary);
+    display: flex;
+    flex-direction: column; /* Gjør kortet til en kolonne */
+    background-color: #f2e5fb;
+    padding-top: 1rem;
+}
+
+.card h3, .card p {
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.card img {
+    margin-top: 1rem;
+    width: 100%; /*Justerer bildestørrelsen*/
+    align-self: flex-end; /* Plasserer bildet nederst */
 }
 
 
@@ -223,7 +237,7 @@ main a:active {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #dac0ed;
+    background-color: var(--primary);
     padding: 60px;
     /*generell stil på footer*/
 }
