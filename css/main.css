@@ -23,10 +23,6 @@ header {
     top: 0;
 }
 
-.header-activity{
-    background-color: var(--secondary);
-}
-
 
 .navbar {
     display: flex;
@@ -260,3 +256,99 @@ header {
     }
 }
 
+/*CSS til ny acticity page*/
+
+
+.activity-body > main {
+    /* Setter verdier for main i topical-siden */
+    margin-top: 5rem; /* For å gi plass til navbaren */
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+
+
+.activity-body {
+    background-color: var(--third);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.activity-img{
+    height: 25rem;
+    /*background-image:url("../img/activity/gaming.jpg");*/
+    background-size: cover;
+    width: 42rem;
+    border-radius: 1rem;
+    z-index: 1;
+    margin-bottom: -2rem;
+    
+}
+
+.activity-img img {
+    width: inherit;
+    height: inherit;
+    margin: inherit;
+    border-radius: inherit;
+}
+
+.activity-img h2{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: -5rem;
+    z-index: 0;
+    position: relative;
+}
+
+
+
+
+
+
+
+.header-activity {
+    position: fixed; /* For å holde navbaren på toppen */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Sørger for at navbaren alltid er over innholdet */
+    background-color: var(--third);
+    border-bottom: 1px solid black;
+}
+
+.activity-article > section {
+    height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Sentraliserer vertikalt */
+    align-items: center; /* Sentraliserer horisontalt */
+    scroll-snap-align: start;
+}
+
+.activity-article h1, .activity-article p {
+    font-size: 1.5rem;
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #022c63e6;
+    text-align: center;
+    max-width: 80vw; /* Begrenser bredden på boksene */
+    margin: 0 auto; /* Sentraliserer boksene */
+}
+
+.activity-article h1 {
+    font-size: 4rem;
+    /* Styling av h1 på topical-siden */
+    /*ENDRE FORMAT*/
+}
+
+.activity-article p {
+    max-width: 60vw;
+    font-size: 1.1rem;
+    /* Styling av p på topicalsiden */
+    /*ENDRE FORMAT*/
+}
