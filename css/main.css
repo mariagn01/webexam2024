@@ -57,7 +57,13 @@ header {
 }
 
 .navbar-activity a:hover{
-    background-color: var(--third);
+    font-weight: 1000;
+    background-color: initial;
+    transition: all;
+}   
+
+.navbar-activity a{
+    color: #ffffff;
 }
 
 
@@ -69,9 +75,6 @@ header {
     background-color: #f1e1fc; /*gjør bakgrunnsfargen lysere når musen peker der*/
 }
 
-.a-active-activity {
-    background-color: var(--third);
-}
 
 /*Hovedinnhold - index.html*/
 /*Grid-container for å lage layout og strukturere innholdet*/
@@ -258,40 +261,43 @@ header {
 
 /*CSS til ny acticity page*/
 
-
-.activity-body > main {
-    /* Setter verdier for main i topical-siden */
-    margin-top: 5rem; /* For å gi plass til navbaren */
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    height: 100vh;
-}
-
-
-.activity-body {
-    background-color: var(--third);
+.sectionTop, .section1, .section2, .section3, .section4 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.sectionTop{
+    background-image: url("../img/activity/forside.jpg");
+}
+
+
+.section1{
+    background-image: url("../img/activity/gaming.jpg");
+}
+
+.section2{
+    background-image: url("../img/activity/lacrosse.jpg");
+}
+
+.section3{
+    background-image: url("../img/activity/sjakk.jpg");
+}
+
+.section4{
+    background-image: url("../img/activity/robotikk.jpg");
+}
+
+.activity-body > main {
+    /* Setter verdier for main i activity-siden */
+    margin-top: 5rem; /* For å gi plass til navbaren */
+    overflow-y: scroll; /*scrolling vertikalt*/
+    scroll-snap-type: y mandatory;/*snapping kun vertikalt*/
+    height: 100vh; /*fullskjerm/hele visningsområdet*/
+}
+
+.activity-body {
+    background-color: var(--third);
     overflow: hidden;
-}
-
-.activity-img{
-    height: 25rem;
-    /*background-image:url("../img/activity/gaming.jpg");*/
-    background-size: cover;
-    width: 42rem;
-    border-radius: 1rem;
-    z-index: 1;
-    margin-bottom: -2rem;
-    
-}
-
-.activity-img img {
-    width: inherit;
-    height: inherit;
-    margin: inherit;
-    border-radius: inherit;
 }
 
 .activity-img h2{
@@ -300,23 +306,15 @@ header {
     color: #ffffff;
     margin: 0;
     margin-bottom: -5rem;
-    z-index: 0;
     position: relative;
 }
-
-
-
-
-
-
 
 .header-activity {
     position: fixed; /* For å holde navbaren på toppen */
     top: 0;
     width: 100%;
-    z-index: 1000; /* Sørger for at navbaren alltid er over innholdet */
-    background-color: var(--third);
-    border-bottom: 1px solid black;
+    z-index: 10; /* Sørger for at navbaren alltid er over innholdet */
+    background-color:  #022c63e6; 
 }
 
 .activity-article > section {
