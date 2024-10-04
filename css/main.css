@@ -1,7 +1,5 @@
 :root {
     --primary: #dac0ed;
-    --secondary: #96dffa; 
-    --third: #c0ecfc;
 }   
 
 body{
@@ -32,7 +30,6 @@ ul li {
 /*Header*/
 header {
     background-color: var(--primary);
-    padding-bottom: 5px 0;
     position: sticky;
     top: 0;
 }
@@ -370,7 +367,6 @@ main a:active {
 }
 
 .activity-body {
-    background-color: var(--third);
     overflow: hidden;
 }
 
