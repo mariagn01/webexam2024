@@ -32,9 +32,9 @@
                 Det siste semesteret skriver du en bacheloroppgave tett knyttet til problemstillinger i arbeidslivet.
             </p>
         </section>
-        <section class="column-2 row-0 inner-columns" id="bulletpoints">
+        <section class="column-2 row-0 inner-columns" id="facts">
             <div class="column">
-            <ul>
+            <ul class="nobullet-list">
                 <li><img src="img/main/studiested.png"> Sted: Pilestredet i Oslo</li>
                 <li><img src="img/main/studienivå.png"> Nivå: Bachelorprogram</li>
                 <li><img src="img/main/varighet.png"> Varighet: 3 år</li>
@@ -42,7 +42,7 @@
             </ul>
         </div>
             <div class="column">
-                <ul>
+                <ul class="nobullet-list">
                     <li><img src="img/main/studiepoeng.png"> Studiepoeng: 180</li>
                     <li><img src="img/main/studiestart.png"> Oppstart: August</li>
                     <li><img src="img/main/språk.png"> Språk: Norsk og engelsk</li>
@@ -51,27 +51,31 @@
             </div>
             <!--Ikoner er laget av Dewi Sari og hentet fra: https://www.freepik.com/author/dewi-sari/icons/-->
         </section>
+
+        <div class="horizontal-line"></div>
+
         <!--Studiestart-->
         <section class="column-1 row-1">
             <h2>Studiestart</h2>
             <p>Informasjon om program, timeplaner, pensum, fadderuker og mye mer finner du på <a href="https://student.oslomet.no/bachelor-matematisk-modellering-datavitenskap">studiestartsiden for matematisk modellering og datavitenskap - ingeniør (student.oslomet.no).</a> 
-                NB! Vær obs på at timeplanen som ligger på studiestartsiden er en timeplan for alle studentene på kullet.</p>
+                <b>NB!</b> Vær obs på at timeplanen som ligger på studiestartsiden er en timeplan for alle studentene på kullet.</p>
             <p>For å se din personlige timeplan må du logge deg inn på <a href="https://student.oslomet.no/">"Min side" (student.oslomet.no)</a> etter at du har aktivert IT-kontoen din og du er blitt plassert i klasse/gruppe. Dette skjer vanligvis uken før studiestart.</p>
         </section>
 
         <!--Opptakskrav-->
         <section class="column-2 row-1">
             <h2>Opptakskrav og poeng</h2>
-            <p>For å søke på dette programmet må du ha 
+            <p>For å søke på dette programmet må du ha</p> 
                 <ul>
                     <li><a href="https://www.samordnaopptak.no/info/opptak/opptak-uhg/"> generell studiekompetanse (samordnaopptak.no)</a>  eller <a href="https://www.oslomet.no/studier/soknad-og-opptak/realkompetanse/realkompetanse-ingenior">oppfylle kravene til realkompetanse </a></li>
                     <li>matematikk R1 og R2</li>
                     <li>fysikk 1</li>
                 </ul>
-                Det kan være konkurranse om plassene. Ved forrige opptak kom alle kvalifiserte søkere inn.
-                Hvis du mangler generell studiekompetanse eller enkelte fag fra videregående skole, kan du søke på dette studiet om du har <a href="https://www.oslomet.no/studier/tkd/forkurs-ingenior">bestått ettårig forkurs for ingeniørutdanning.</a>
-            </p>
+                <p>Det kan være konkurranse om plassene. Ved forrige opptak kom alle kvalifiserte søkere inn.
+                Hvis du mangler generell studiekompetanse eller enkelte fag fra videregående skole, kan du søke på dette studiet om du har <a href="https://www.oslomet.no/studier/tkd/forkurs-ingenior">bestått ettårig forkurs for ingeniørutdanning.</a></p>
         </section>
+
+        <div class="horizontal-line"></div>
 
         <!--Slik søker du-->
         <section class="column-1 row-2">
@@ -89,13 +93,15 @@
             <h2>Hva koster det?</h2>
             <p>Det er ikke studieavgift på dette studiet. <a href="https://student.oslomet.no/semesteravgift">Du betaler en semesteravgift hvert semester (student.oslomet.no).</a></p>
         </section>
+
+        <div class="horizontal-line"></div>
     
         <!--Spesialiseringer-->
         <section class="full-width">
             <h2>Spesialiseringer</h2>
             <p>Første året velger du hvilken av disse spesialiseringene du vil ta.</p>
             <!--En beholder for å kunne plassere tre kolonner horisontalt, en for hver spesialisering-->
-            <div class="inner-columns">
+            <div class="inner-columns" id="spesialiseringer">
                 <article class="column">
                     <h3>Statistiske og datadrevne metoder</h3>
                     <p>Du lærer om hvordan du kan bruke målte data koblet med datadrevne og statistiske metoder til å gjøre beregninger, for eksempel av fremtidige strømpriser.
@@ -114,6 +120,8 @@
                 </article>
             </div>
         </section>
+
+        <div class="horizontal-line"></div>
 
         <!--Studiets oppbygning-->
         <section class="full-width" id="studieløp">
@@ -166,7 +174,7 @@
                 </tbody>
             </table>
             <h3>Valgemner for spesialiseringene</h3>
-            <table id="valgemner">
+            <table>
                 <thead>
                     <tr>
                         <th colspan="3">5. Semester</th>
@@ -187,7 +195,7 @@
                     <tr>
                         <td>
                             <!--5. semester, Matematikk og fysikk-->
-                            <ul>
+                            <ul class="nobullet-list">
                                 <li>DATA3730 Introduksjon til IT-forskning</li>
                                 <li>DATA3800 Introduction to Data Science with Scripting</li>
                                 <li>ITPE3100 Datasikkerhet</li>
@@ -196,7 +204,7 @@
                         </td>
                         <td>
                             <!--5. semester, Statistiske og datadrevne metoder-->
-                            <ul>
+                            <ul class="nobullet-list">
                                 <li>DATA3730 Introduksjon til IT-forskning</li>
                                 <li>DATA3750 Anvendt kunstig intelligens og data science prosjekt</li>
                                 <li>ITPE3100 Datasikkerhet</li>
@@ -205,7 +213,7 @@
                         </td>
                         <td>
                             <!--5. semester, Vitenskapelige beregninger-->
-                            <ul>
+                            <ul class="nobullet-list">
                                 <li>MAMO3200 Simulering og visualisering</li>
                                 <li>DATA3730 Introduksjon til IT-forskning</li>
                                 <li>MAMO2300 Lineær algebra og introduksjon til gruppeteori</li>
@@ -214,7 +222,7 @@
                         </td>
                         <td>
                             <!--6. semester, Matematikk og fysikk-->
-                            <ul>
+                            <ul class="nobullet-list">
                                 <li>ADTS2310 Testing av programvare</li>
                                 <li>DATA2410 Datanettverk og skytjenester</li>
                                 <li>DAVE3606 Ressurseffektive programmer</li>
@@ -223,7 +231,7 @@
                         </td>
                         <td>
                             <!--6. semester, Statistiske og datadrevne metoder-->
-                            <ul>
+                            <ul class="nobullet-list">
                                 <li>ADTS2310 Testing av programvare</li>
                                 <li>DATA2410 Datanettverk og skytjenester</li>
                                 <li>DAVE3606 Ressurseffektive programmer</li>
@@ -231,7 +239,7 @@
                         </td>
                         <td>
                             <!--6. semester, Vitenskapelige beregninger-->
-                            <ul>
+                            <ul class="nobullet-list">
                                 <li>ADSE3200 Visualisering</li>
                                 <li>ADTS2310 Testing av programvare</li>
                                 <li>DATA2410 Datanettverk og skytjenester</li>
@@ -241,20 +249,108 @@
                     </tr>
                 </tbody>
             </table>
+            <p>Du kan dra på utveksling i femte semester. Les mer om utveksling <a href="https://student.oslomet.no/utveksling">her</a>.</p>
         </section>
 
+        <div class="horizontal-line"></div>
+
+        <!--Undervisningsopplegg-->
         <section class="column-1 row-4">
-            <p>Section 7</p>
+            <h2>Undervisning</h2>
+            <p>Undervisningen er en kombinasjon av
+                <ul>
+                    <li>Prosjektarbeid</li>
+                    <li>Workshop</li>
+                    <li>Presentasjoner</li>
+                    <li>Veiledninger</li>
+                    <li>Diskusjoner og refleksjoner</li>
+                    <li>Forelesninger</li>
+                    <li>Selvstudier</li>
+                    <li>Gruppearbeid</li>
+                    <li>Arbeidslivsrelevant bacheloroppgave</li>
+                </ul>
+                For å gjennomføre studiet på normert tid, må du regne med å bruke om lag 40 timer per uke på studierelatert arbeid gjennom hele semesteret. </p>
         </section>
+        <!--Jobbmuligheter-->
         <section class="column-2 row-4">
-            <p>Section 8</p>
+            <h2>Jobbmuligheter etter utdanningen</h2>
+            <p>Med dette studiet får du IT-kompetanse som er etterspurt i arbeidslivet, særlig om du velger spesialiseringene vitenskapelige beregninger eller statistiske og datadrevne metoder.</p> 
+            <p>Spesialiseringen i matematikk og fysikk retter seg mer mot videre studier, men også her får du etterspurt kompetanse i arbeidslivet etter bachelorstudiet. </p>
+            <p>Matematisk modellering og datavitenskap blir stadig viktigere som basisgrunnlag, i for eksempel beregninger knyttet til klima, forsikring og finans, og datadrevne metoder for verdiskaping. 
+                Datadrevne metoder og maskinlæring er i dag svært mye brukt i arbeidslivet. </p>
         </section>
+
+        <div class="horizontal-line"></div>
+
+        <!--Andre studiemuligheter-->
         <section class="column-1 row-5">
-            <p>Section 9</p>
+            <h2>Du er kanskje også interessert i disse?</h2>
+            <p>Andre relaterte bachelorprogrammer på Pilestredet i Oslo:</p>
+            <ul class="nobullet-list">
+                <li><a href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi">Anvendt datateknologi</a></li>
+                <li><a href="https://www.oslomet.no/studier/tkd/bioteknologi-kjemiingenior">Bioteknologi- og kjemiingeniør</a></li>
+                <li><a href="https://www.oslomet.no/studier/tkd/byggingenior">Byggingeniør</a></li>
+                <li><a href="https://www.oslomet.no/studier/tkd/dataingenior">Dataingeniør</a></li>
+                <li><a href="https://www.oslomet.no/studier/tkd/elektronikkingenior">Elektronikkingeniør</a></li>
+                <li><a href="https://www.oslomet.no/studier/tkd/informasjonsteknologi">Informasjonsteknologi</a></li>
+                <li><a href="https://www.oslomet.no/studier/tkd/maskiningenior">Maskiningeniør</a></li>
+                <li><a href="https://www.oslomet.no/studier/tkd/tre-termin-ingenior">Tre-terminsordning til ingeniørutdanning</a></li>
+            </ul>
         </section>
+        <!--Faglig leder og Studiested-->
         <section class="column-2 row-5">
-            <p>Section 10</p>
+            <h2>Faglig leder</h2>
+            <ul class="nobullet-list">
+                <li><b><a href="https://www.oslomet.no/om/ansatt/krhel3944/">Kristoffer Herland Hellton</a> </b></li>
+                <li>Førsteamanuensis</li>
+                <li>Telefon: +47 672 37 240</li>
+                <li>E-post: kristoffer.hellton@oslomet.no</li>
+            </ul><br>
+            <p>Studiestedet <a href="https://www.oslomet.no/om/studiested-pilestredet">Pilestredet</a></p>
         </section>
+
+        <div class="horizontal-line"></div>
+
+        <!--Videre studiemuligheter-->
+        <section class="column-1 row-6">
+            <h2>Videre studiemuligheter</h2>
+            <p><a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">Anvendt data- og informasjonsteknologi (ACIT)</a><br>
+            Masterprogram | 2 år | Heltid | Pilestredet i Oslo</p>
+        </section>
+        <!--Spørsmål om utdanningen-->
+        <section class="column-2 row-6">
+            <h2>Spørsmål?</h2>
+            <p>Har du spørsmål om utdanningen, kontakt oss gjennom vårt <a href="https://www.oslomet.no/kontaktskjema#For%20utdanningss%C3%B8kere?faculty=Fakultet%20for%20teknologi,%20kunst%20og%20design">kontaktskjema</a></p>
+        </section>
+
+        <div class="horizontal-line"></div>
+
+        <!--Studenthistorier-->
+        <article class="full-width">
+            <h2>Studenthistorier</h2>
+            <p>Du finner alle våre studenthistorier <a href="https://www.oslomet.no/studier/studenthistorier">her</a>.</p>
+            <section class="inner-columns">
+                <section class="column">
+                    <div class="card">
+                        <p>Teknologi og design</p>
+                        <h3><a href="https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap"> Spå fremtiden med matematikk og datavitenskap</a></h3><br>
+                        <p>Har du lyst til å finne ut hva som vil skje i fremtiden? Lær å bruke verktøy for å forutsi alt fra været og strømprisene til utviklingen i boligmarkedet.</p>
+                        <img src="img/main/matematikk_oslomet.jpg" alt="Student Sebastian står sammen med leder for bachelorprogrammet André og smiler med en laptop">
+                        <!--Bildet er hentet fra artikkelen/historien som er lenket til over, fotograf: Oda Hveem / OsloMet-->
+                    </div>
+                </section>
+                <section class="column"> 
+                    <div class="card">
+                        <p>Teknologi og design</p>
+                        <h3><a href="https://www.oslomet.no/studier/studenthistorier/vil-vare-spissen-kommende-teknologiske-revolusjonen">– Jeg vil være i spissen av den kommende teknologiske revolusjonen</a></h3>
+                        <p>Kvanteberegning er fremtiden, mener OsloMet-student Maryam Lotfigolian. Hun har ingen planer om å la kvanterevolusjonen, som hun er sikker på vil komme, gå fra seg.</p>
+                        <img src="img/main/kvante_oslomet.jpg" alt="Student Maryam Lotfigolian på OsloMet Campus Pilestredet">
+                        <!--Bildet er hentet fra artikkelen/studenthistorien som er lenket til over, fotograf: Christine Gulbrandsen og Benjamin A. Ward / OsloMet-->
+                    </div>
+                </section>
+            </section>
+        </article>
+
         <!--Use <section> to divide the content into meaningful <sections-->
         <!--If you have standalone content pieces like student testimonials, research articles, or blogs, use <article>-->
         <!--Use <aside> for related information that complements the main content, such as links to other programs or quick facts-->

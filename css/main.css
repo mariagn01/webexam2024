@@ -6,14 +6,28 @@
 
 body{
     margin: 0px;
+    font-family: sans-serif;
 }
+
 h1{
     text-align: center;
+    font-family: sans-serif;
 }
 
 ul li {
     margin-bottom: 10px; /* Mellomrom mellom liste-elementene */
+    font-family: sans-serif;
 }
+
+/*Skillelinje for å dele opp og strukturere innholdet på siden*/
+.horizontal-line {
+    grid-column: 2 / span 2; 
+    width: 100%;
+    height: 0.1px;
+    background-color: rgb(203, 203, 203);
+    margin: 0;
+    padding: 0.7px;
+  }
 
 /*Header*/
 header {
@@ -77,6 +91,43 @@ header {
 
 
 /*Hovedinnhold - index.html*/
+
+/*Lenker i hovedinnholdet*/
+main a:link {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #bc8ee0; 
+    text-underline-offset: 3px; /* Øker avstanden mellom tekst og strek */
+    font-family: sans-serif;
+}
+
+/* Besøkt lenke */
+main a:visited {
+    color: #4d1b74;
+    text-decoration: underline;
+    text-decoration-color: #bc8ee0;
+    text-underline-offset: 3px;
+    font-family: sans-serif;
+}
+
+/* Musepeker over link */
+main a:hover {
+    color: #8046ad;
+    text-decoration: underline;
+    text-decoration-color: #bc8ee0;
+    text-underline-offset: 3px;
+    font-family: sans-serif;
+}
+
+/* Aktiv link */
+main a:active {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #bc8ee0;
+    text-underline-offset: 3px;
+    font-family: sans-serif;
+}
+
 /*Grid-container for å lage layout og strukturere innholdet*/
 .container {
     display: grid;
@@ -98,7 +149,7 @@ header {
   }
 
 .container section {
-    padding: 1rem;
+    padding: 1rem;  /*Padding i seksjonene*/
 }
 
 /*Seksjoner som skal ha full bredde og ta opp begge kolonner i stedet for en*/
@@ -121,22 +172,26 @@ header {
     padding: 20px;
 }
 
-.full-width .column {
+/*Kantlinje rundt spesialiseringene*/
+#spesialiseringer .column {
     border: 2px solid #dac0ed;
 }
 
-/*Punkter under studieinformasjon + ikoner foran*/
-#bulletpoints ul, #valgemner ul {
+/*Standard klasse for en liste uten kulepunkter og innrykk*/
+.nobullet-list {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
 }
 
-#bulletpoints img{
+/*Ikoner*/
+#facts img{
     max-width: 10%;
 }
 
-#bulletpoints li {
+/*Skrift i punktene med fakta*/
+#facts li {
+    padding-top: 1rem;
     font-size: 1rem;
     font-family: sans-serif;
 }
@@ -154,15 +209,34 @@ header {
 }
 
 #studieløp th {
-    background-color: #dac0ed;
+    background-color: var(--primary); /*Farge på tabellheader*/
 }
+
+/*Studenthistorier*/
+.card {
+    display: flex;
+    flex-direction: column; /* Gjør kortet til en kolonne */
+    background-color: #f2e5fb;
+    padding-top: 1rem;
+}
+
+.card h3, .card p {
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.card img {
+    margin-top: 1rem;
+    width: 100%; /*Justerer bildestørrelsen*/
+    align-self: flex-end; /* Plasserer bildet nederst */
+}
+
 
 /*Footer*/
 .footer-wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #dac0ed;
+    background-color: var(--primary);
     padding: 60px;
     /*generell stil på footer*/
 }
