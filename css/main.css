@@ -16,6 +16,7 @@ h1{
 ul li {
     margin-bottom: 10px; /* Mellomrom mellom liste-elementene */
     font-family: sans-serif;
+    line-height: 1.5;
 }
 
 /*Skillelinje for å dele opp og strukturere innholdet på siden*/
@@ -89,6 +90,11 @@ header {
 
 
 /*Hovedinnhold - index.html*/
+
+/*Linjeavstand for bedre lesbarhet*/
+p {
+    line-height: 1.5;
+}
 
 /*Lenker i hovedinnholdet*/
 main a:link {
@@ -180,6 +186,7 @@ main a:active {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
+    line-height: 1.5;
 }
 
 /*Ikoner*/
@@ -226,6 +233,14 @@ main a:active {
     margin-top: 1rem;
     width: 100%; /*Justerer bildestørrelsen*/
     align-self: flex-end; /* Plasserer bildet nederst */
+}
+
+/*Hovedinnhold - Accessibility*/
+.column-2 img {
+    width: 85%;
+    height: auto;
+    align-items: center;
+    margin-left: 5%;
 }
 
 
