@@ -346,6 +346,7 @@ main a:active {
     }
 }
 
+
 /*CSS til ny acticity page*/
 
 .sectionTop, .section1, .section2, .section3, .section4 {
@@ -436,3 +437,19 @@ main a:active {
     /* Styling av p på topicalsiden */
     /*ENDRE FORMAT*/
 }
+
+/*Skalering for liten skjerm, mobile view*/
+@media (max-width: 900px) {
+
+    /*Main*/
+    .inner-columns {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+/*Skalering for stor skjerm, wide screen*/
+@media (max-width: 1800px) {
+    /*Teste på pc-skjermen hjemme*/
+}
+
