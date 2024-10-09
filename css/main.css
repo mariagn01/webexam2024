@@ -240,7 +240,7 @@ main a:active {
     width: 85%;
     height: auto;
     align-items: center;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 
@@ -439,12 +439,50 @@ main a:active {
 }
 
 /*Skalering for liten skjerm, mobile view*/
-@media (max-width: 900px) {
+@media (max-width: 800px) {
 
     /*Main*/
+    * {
+        box-sizing: border-box; /* Sikrer at padding og marginer ikke påvirker den totale bredden */
+    }
+    main {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto; 
+        max-width: 100%;
+    }
+
+    .column-1, .column-2 {
+        grid-column: 1; /* Hver kolonne tar opp hele bredden */
+        padding: 10px;  /* Mindre padding for mobil */
+    }
+
+    #facts {
+        flex-direction: row;
+    }
+
     .inner-columns {
-        flex-direction: column;
+        flex-direction: column; /* Stacker de indre kolonnene vertikalt */
         justify-content: space-around;
+        padding: 10px; 
+    }
+
+    .column {
+        margin: 0; /* Fjerner margin mellom kolonner siden de nå er vertikale */
+        padding: 10px;
+    }
+
+    .full-width {
+        grid-column: 1; /* Full bredde for mobil */
+        padding: 10px;
+    }
+
+    .horizontal-line {
+        display: none;
     }
 }
 
