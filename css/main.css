@@ -477,13 +477,13 @@ th {
     }
 
     .table-container {
-        max-width: 400px; /*Sikrer scroll-funksjon på tabellene på små skjermer*/
+        max-width: 400px; /*Sikrer scroll-funksjon på tabellene på smarttelefon-skjermer med ca. 430 px bredde, og hindrer overflow*/
         overflow-x: auto;
     }
 
     table {
         width: 100%; /*Justeringer for å gjøre tabell responsiv*/
-        min-width: 600px;
+        min-width: 600px; /*Sikrer scroll-funksjon*/
     }
 
     th, td {
