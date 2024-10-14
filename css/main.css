@@ -10,7 +10,6 @@ body{
 h1{
     text-align: center;
     font-family: sans-serif;
-    padding-bottom: 2rem;
 }
 
 ul li {
@@ -36,17 +35,27 @@ header {
     top: 0;
 }
 
+header h1 {
+    margin-top: 0;
+    padding-bottom: 2rem;
+}
+
 
 .navbar {
     display: flex;
     justify-content: space-between; /* Plasserer logoen til venstre og lenkene til høyre */
     align-items: center; /* Vertikal sentrering av logoen og lenkene */
-    padding: 5px 20px;
+    padding: .5rem 1rem 0 1rem;
 }
 
 .logo img{
     height: 40px; /* Juster høyden på logoen */
     width: auto; /* Behold bildeproporsjonene */
+    transition: transform .3s;
+}
+
+.logo img:hover{
+    transform: scale(1.1);
 }
 
 .navbar ul{
@@ -360,7 +369,7 @@ th {
 
 .activity-body > main {
     /* Setter verdier for main i activity-siden */
-    margin-top: 5rem; /* For å gi plass til navbaren */
+    margin-top: 4.6rem; /* For å gi plass til navbaren */
     overflow-y: scroll; /*scrolling vertikalt*/
     scroll-snap-type: y mandatory;/*snapping kun vertikalt*/
     height: 100vh; /*fullskjerm/hele visningsområdet*/
@@ -368,15 +377,6 @@ th {
 
 .activity-body {
     overflow: hidden;
-}
-
-.activity-img h2{
-    text-align: center;
-    font-size: 1.5rem;
-    color: #ffffff;
-    margin: 0;
-    margin-bottom: -5rem;
-    position: relative;
 }
 
 .header-activity {
@@ -400,16 +400,25 @@ th {
 .activity-article h1, .activity-article p {
     font-size: 1.5rem;
     color: white;
-    padding: 2rem;
     border-radius: 1rem;
-    background-color: #022c63e6;
     text-align: center;
     max-width: 80vw; /* Begrenser bredden på boksene */
     margin: 0 auto; /* Sentraliserer boksene */
 }
 
+.activity-box {
+    background-color: #022c63e6;
+    border-radius: 1rem;
+    text-align: center;
+    max-width: 80vw; /* Begrenser bredden på boksene */
+    margin: 0 auto; /* Sentraliserer boksene */
+    color: white;
+
+}
+
 .activity-article h1 {
     font-size: 4rem;
+    padding: 1.6rem;
     /* Styling av h1 på topical-siden */
     /*ENDRE FORMAT*/
 }
@@ -417,6 +426,7 @@ th {
 .activity-article p {
     max-width: 60vw;
     font-size: 1.1rem;
+    padding: 0 2rem 2rem 2rem;
     /* Styling av p på topicalsiden */
     /*ENDRE FORMAT*/
 }
