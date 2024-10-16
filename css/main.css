@@ -106,7 +106,7 @@ p {
 }
 
 /*Lenker i hovedinnholdet*/
-main a:link {
+.container a:link {
     color: black;
     text-decoration: underline;
     text-decoration-color: #bc8ee0; 
@@ -115,7 +115,7 @@ main a:link {
 }
 
 /* Besøkt lenke */
-main a:visited {
+.container a:visited {
     color: #4d1b74;
     text-decoration: underline;
     text-decoration-color: #bc8ee0;
@@ -124,7 +124,7 @@ main a:visited {
 }
 
 /* Musepeker over link */
-main a:hover {
+.container a:hover {
     color: #8046ad;
     text-decoration: underline;
     text-decoration-color: #bc8ee0;
@@ -133,7 +133,7 @@ main a:hover {
 }
 
 /* Aktiv link */
-main a:active {
+.container a:active {
     color: black;
     text-decoration: underline;
     text-decoration-color: #bc8ee0;
@@ -319,12 +319,7 @@ th {
     font-size: 14px;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 4rem 0;
-}
+
 
 .flex-box {
     width: 40%;
@@ -369,7 +364,7 @@ th {
 
 .activity-body > main {
     /* Setter verdier for main i activity-siden */
-    margin-top: 4.6rem; /* For å gi plass til navbaren */
+    margin-top: 4.4rem; /* For å gi plass til navbaren */
     overflow-y: scroll; /*scrolling vertikalt*/
     scroll-snap-type: y mandatory;/*snapping kun vertikalt*/
     height: 100vh; /*fullskjerm/hele visningsområdet*/
@@ -413,23 +408,96 @@ th {
     max-width: 80vw; /* Begrenser bredden på boksene */
     margin: 0 auto; /* Sentraliserer boksene */
     color: white;
-
+    padding: 1rem;
 }
 
 .activity-article h1 {
     font-size: 4rem;
-    padding: 1.6rem;
     /* Styling av h1 på topical-siden */
     /*ENDRE FORMAT*/
+}
+
+.activity-article h2 {
+    margin-top: 0;
 }
 
 .activity-article p {
     max-width: 60vw;
     font-size: 1.1rem;
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 2rem 1rem 2rem;
     /* Styling av p på topicalsiden */
     /*ENDRE FORMAT*/
 }
+
+.activity-box a{
+    text-decoration: none;
+    color: white; 
+    text-decoration: underline;
+    transition: all .3s;
+}
+
+.activity-box a:hover{
+    color: rgb(205, 96, 57);
+    font-weight: 600;
+}
+
+
+.activity-box button {
+    border: none;
+    color: black;
+    padding: .5rem;
+    background-color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: opacity .3s ease;
+}
+
+.activity-box button:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+
+/* GITHUB PAGE */
+
+.github-body{
+    margin: 4rem 5rem;
+}
+
+/*
+.img-left{
+    margin-right: 3rem;
+}
+
+.img-right{
+    margin-left: 3rem;
+}
+*/
+
+.flex-container img{
+    width: 40%;
+    object-fit:fill;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5) !important;
+    margin: 0 2rem;
+}
+
+.vertical-line {
+    background-color: rgb(203, 203, 203);
+    width: 2px;
+    margin: 0 1rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.github-text-box{
+    width: 600px;
+    padding: 2rem 4rem;
+}
+
 
 /*MOBILE VIEW - Skalering for liten skjerm*/
 @media (max-width: 800px) {
