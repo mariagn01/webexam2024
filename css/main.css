@@ -252,11 +252,15 @@ th {
 }
 
 /*Hovedinnhold - Accessibility*/
-.column-2 img {
+
+.img-accessibility {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-accessibility img {
     width: 85%;
     height: auto;
-    align-items: center;
-    margin-left: 10%;
 }
 
 
@@ -318,7 +322,6 @@ th {
     margin-top: 10px;
     font-size: 14px;
 }
-
 
 
 .flex-box {

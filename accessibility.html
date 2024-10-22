@@ -27,11 +27,11 @@
     <main class="container">
         <section class="column-1 row-1">
             <h2>Arkitektur og layout</h2>
-            <p>HTML-koden er bygget opp av semantiske elementer for å strukturere siden på en meningsfull måte og tydelig definere de ulike delene. Dette gjør også innholdet forståelig for skjermlesere og andre hjelpemidler. Elementer som er brukt er header, nav, main, section, article, og footer. Vi har også passet på å bruke korrekt heading-struktur – h1-elementet brukes kun én gang per side, og deretter er overskriftene hierarkisk strukturert nedover med h2, h3, osv. Vi har ønsket å gjenbruke klasser så godt det lar seg gjøre, og kommentere koden med beskrivende og tydelige kommentarer som vil være forståelig og oversiktlig for en eventuell fremtidig utvikler.</p>
+            <p>HTML-koden er bygget opp av semantiske elementer for å strukturere siden på en meningsfull måte og tydelig definere de ulike delene. Dette gjør også innholdet forståelig for skjermlesere og andre hjelpemidler. Elementer som er brukt er header, nav, main, section, article, og footer.  Vi har ønsket å gjenbruke klasser så godt det lar seg gjøre, og kommentere koden med beskrivende og tydelige kommentarer som vil være forståelig og oversiktlig for en eventuell fremtidig utvikler.</p>
             <p>Layouten følger en klassisk top-down stil der vi har ønsket å presentere informasjonen i en logisk og forutsigbar rekkefølge for brukeren (header og navigasjon - hovedinnhold - footer). Vi har hatt fokus på å skape tydelige seksjoner i hovedinnholdet. For å gjøre dette har vi brukt skillelinjer, marger (margins) og polstring (padding) som skaper nok luft mellom seksjoner, samt høy kontrast mellom overskrifter og tekst. I tillegg har vi brukt borders rundt underseksjoner, og tabeller for å strukturere større mengder data på en oversiktlig måte.</p> 
             <p>Vi har også ønsket en intuitiv navigasjon, og har derfor valgt en enkel horisontal meny som presenterer de viktigste delene først, og er konsistent i formen på tvers av alle sidene (også Activity-siden). Elementene er samlet til høyre, da ting man ofte bruker bør være nære hverandre. Til høyre kan dere se vår opprinnelige skisse for layouten til index.html.</p>
         </section>
-        <section class="column-2 row-1">
+        <section class="column-2 row-1 img-accessibility">
             <img src="img/accessibility/skisse.png" alt="Skisse brukt for sidens arkitektur og layout">
         </section>
         <section class="column-1 row-2">
@@ -39,26 +39,40 @@
             <p>Målet med våre designvalg har vært å skape sammenhengende estetikk og en helhetlig brukeropplevelse for flest mulig brukere. 
                 <ul class="nobullet-list">
                     <li><b>Farger:</b> Vi har benyttet en lilla fargepalett som går igjen gjennom hele nettsiden og gir en konsistent visuell identitet. </li>
-                    <li><b>Kontraster:</b> Fargekontraster er brukt for å sikre god lesbarhet og tilgjengelighet – hovedinnholdet har mørk tekst på hvit bakgrunn, lenker har en mørkere lillafarge (når musepeker er over) mot lys bakgrunn, samt en lysere lillafarge som bakgrunn der det er mørk tekst. Fargekontraster er også brukt for å fremheve hvilken side man er på i navigasjonsbaren. </li>
+                    <li><b>Kontraster:</b> Fargekontraster er mye brukt for å sikre god lesbarhet og tilgjengelighet, mellom forgrunn- og bakgrunnsfarger, tekst og bakgrunn, samt på lenker.  Fargekontraster er også brukt for å fremheve hvilken side man er på i navigasjonsbaren. </li>
                     <li><b>Skrift:</b> Vi har valgt en sans-seriff-skrifttype, da den ofte blir oppfattet som lettere å lese på skjerm og på skrift som er liten, noe som forbedrer brukeropplevelsen. Fet tekst er også brukt der det er hensiktsmessig, noe som også kan bidra til kontrast og bedre lesbarhet.</li>
                 </ul>
                 </p>
         </section>
         <section class="column-2 row-2">
             <h2>Responsivitet og skalering</h2>
-            <p>Blabla</p>
+            <p>Siden er gjort responsiv og skaleres for både mindre smarttelefon-skjermer, laptop skjermer, og større, vide skjermer. Dette er gjort ved bruk av media queries, som hovedsakelig stabler seksjonene over hverandre for mindre skjermer, og justerer størrelsen på elementer for vide skjermer. </p>
+            <p>Tabeller er gjort responsive ved at de får en scroll-funksjon på mindre skjermer, avgrensningen er tilpasset en typisk skjermstørrelse på smarttelefoner. </p>
+            <p>Vi har også brukt relative enheter som em, rem og % i stedet for faste enheter som piksler (px) etter beste evne. Disse verdiene gir nettsiden muligheten til å tilpasse seg forskjellige skjermstørrelser, oppløsninger og brukerinnstillinger (for eksempel hvis man forstørrer tekststørrelsen). </p>
         </section>
         <section class="column-1 row-3">
-            <h2>Andre valg for universell utforming</h2>
-            <ul>
-                <li>Alle bilder har en alternativ tekst gjennom alt-attributten, noe som sikrer at brukere med synshemminger får en beskrivelse av bildene. </li>
-                <li>Beskrivende og meningsfulle overskrifter og «merkelapper» (labels) som gir god forståelse for flest mulig brukere, og forenkler navigering. </li>
-                <li>Tekst i lenker er beskrivende fraser som gir kontekst. </li>
-            </ul>
-        </section>
-        <section class="column-2 row-3">    
             <h2>Accessibility-test</h2>
-            <!--Flytte denne øverst over en hel section?-->
+            <p>Vi har testet siden med en automatisert accessiblity-test kalt Google Lighthouse. Testen ga oss en score på 100, for både desktop og mobil. </p>
+        </section>
+        <section class="column-2 row-3">  
+            <div class="img-accessibility">  
+                <img src="img/accessibility/accessibility-score.png" alt="Skjermbilde fra resultat av test som viser score">
+            </div>
+        </section>
+        <section class="column-1 row-4 img-accessibility">
+            <img src="img/accessibility/accessibility-audits.png" alt="Skjermbilde som viser tilbakemeldinger fra testen">
+        </section>
+        <section class="column-2 row-4">    
+            <h3>Høydepunkter fra testen</h3>
+            <p>Vi fikk flere "passed audits" på testen som vi ønsker å fremheve:</p>
+            <ul>
+                <li>Bilder har alt-attributter, og informasjonen i disse er ikke overflødige</li>
+                <li>Bakgrunns- og forgrunnsfarger har tilstrekkelig kontrastforhold</li>
+                <li>Lenker har unike navn og er visuelt gjenkjennelige uten å være avhengig av farger</li>
+                <li>Lister er korrekt strukturert for skjermlesere</li>
+                <li>Knapper, lenker eller andre interaktive elementer har tilstrekkelig størrelse og avstand</li>
+                <li>Overskrifts-elementer (h1, h2..) har korrekt hierarkisk struktur i synkende rekkefølge</li>
+            </ul>
         </section>
     </main>
 
