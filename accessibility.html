@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="no">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,26 +9,27 @@
     <!--Favicon-->
     <link rel="icon" href="https://img.icons8.com/fluency-systems-filled/50/7950F2/education.png" type="image/png">
 </head>
+
 <body>
     <!--Header-->
     <header>
         <input id="menu-toggle" type="checkbox">
-            <label class="burger-menu" for="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
+        <label class="burger-menu" for="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
         <nav class="navbar">
             <a href="#" class="logo">
                 <img src="img/header-footer/oslometLogo.png" alt="Oslomet logo">
             </a>
             <ul class="menu">
-              <li><a href="index.html">Forside</a></li>
-              <li><a href="activity.html">Foreninger</a></li>
-              <li><a class="a-active" href="accessibility.html">Tilgjengelighet</a></li>
-              <li><a href="github.html">Github</a></li>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="activity.html">Foreninger</a></li>
+                <li><a class="a-active" href="accessibility.html">Tilgjengelighet</a></li>
+                <li><a href="github.html">Github</a></li>
             </ul>
-          </nav>
+        </nav>
         <h1>Tilgjengelighet</h1>
     </header>
 
@@ -35,42 +37,68 @@
     <main class="container">
         <section class="column-1 row-1">
             <h2>Arkitektur og layout</h2>
-            <p>HTML-koden er bygget opp av semantiske elementer for å strukturere siden på en meningsfull måte og tydelig definere de ulike delene. Dette gjør også innholdet forståelig for skjermlesere og andre hjelpemidler. Elementer som er brukt er header, nav, main, section, article, og footer.  Vi har ønsket å gjenbruke klasser så godt det lar seg gjøre, og kommentere koden med beskrivende og tydelige kommentarer som vil være forståelig og oversiktlig for en eventuell fremtidig utvikler.</p>
-            <p>Layouten følger en klassisk top-down stil der vi har ønsket å presentere informasjonen i en logisk og forutsigbar rekkefølge for brukeren (header og navigasjon - hovedinnhold - footer). Vi har hatt fokus på å skape tydelige seksjoner i hovedinnholdet. For å gjøre dette har vi brukt skillelinjer, marger (margins) og polstring (padding) som skaper nok luft mellom seksjoner, samt høy kontrast mellom overskrifter og tekst. I tillegg har vi brukt borders rundt underseksjoner, og tabeller for å strukturere større mengder data på en oversiktlig måte.</p> 
-            <p>Vi har også ønsket en intuitiv navigasjon, og har derfor valgt en enkel horisontal meny som presenterer de viktigste delene først, og er konsistent i formen på tvers av alle sidene (også Activity-siden). Elementene er samlet til høyre, da ting man ofte bruker bør være nære hverandre. Til høyre kan dere se vår opprinnelige skisse for layouten til index.html.</p>
+            <p>HTML-koden er bygget opp av semantiske elementer for å strukturere siden på en meningsfull måte og
+                tydelig definere de ulike delene. Dette gjør også innholdet forståelig for skjermlesere og andre
+                hjelpemidler. Elementer som er brukt er header, nav, main, section, article, og footer. Vi har ønsket å
+                gjenbruke klasser så godt det lar seg gjøre, og kommentere koden med beskrivende og tydelige kommentarer
+                som vil være forståelig og oversiktlig for en eventuell fremtidig utvikler.</p>
+            <p>Layouten følger en klassisk top-down stil der vi har ønsket å presentere informasjonen i en logisk og
+                forutsigbar rekkefølge for brukeren (header og navigasjon - hovedinnhold - footer). Vi har hatt fokus på
+                å skape tydelige seksjoner i hovedinnholdet. For å gjøre dette har vi brukt skillelinjer, marger
+                (margins) og polstring (padding) som skaper nok luft mellom seksjoner, samt høy kontrast mellom
+                overskrifter og tekst. I tillegg har vi brukt borders rundt underseksjoner, og tabeller for å
+                strukturere større mengder data på en oversiktlig måte.</p>
+            <p>Vi har også ønsket en intuitiv navigasjon, og har derfor valgt en enkel horisontal meny som presenterer
+                de viktigste delene først, og er konsistent i formen på tvers av alle sidene (også Activity-siden).
+                Elementene er samlet til høyre, da ting man ofte bruker bør være nære hverandre. Til høyre kan dere se
+                vår opprinnelige skisse for layouten til index.html.</p>
         </section>
         <section class="column-2 row-1 img-accessibility">
             <img src="img/accessibility/skisse.png" alt="Skisse brukt for sidens arkitektur og layout">
         </section>
         <section class="column-1 row-2">
             <h2>Designvalg</h2>
-            <p>Målet med våre designvalg har vært å skape sammenhengende estetikk og en helhetlig brukeropplevelse for flest mulig brukere. 
-                <ul class="nobullet-list">
-                    <li><b>Farger:</b> Vi har benyttet en lilla fargepalett som går igjen gjennom hele nettsiden og gir en konsistent visuell identitet. </li>
-                    <li><b>Kontraster:</b> Fargekontraster er mye brukt for å sikre god lesbarhet og tilgjengelighet, mellom forgrunn- og bakgrunnsfarger, tekst og bakgrunn, samt på lenker.  Fargekontraster er også brukt for å fremheve hvilken side man er på i navigasjonsbaren. </li>
-                    <li><b>Skrift:</b> Vi har valgt en sans-seriff-skrifttype, da den ofte blir oppfattet som lettere å lese på skjerm og på skrift som er liten, noe som forbedrer brukeropplevelsen. Fet tekst er også brukt der det er hensiktsmessig, noe som også kan bidra til kontrast og bedre lesbarhet.</li>
-                </ul>
-                </p>
+            <p>Målet med våre designvalg har vært å skape sammenhengende estetikk og en helhetlig brukeropplevelse for
+                flest mulig brukere.
+            <ul class="nobullet-list">
+                <li><b>Farger:</b> Vi har benyttet en lilla fargepalett som går igjen gjennom hele nettsiden og gir en
+                    konsistent visuell identitet. </li>
+                <li><b>Kontraster:</b> Fargekontraster er mye brukt for å sikre god lesbarhet og tilgjengelighet, mellom
+                    forgrunn- og bakgrunnsfarger, tekst og bakgrunn, samt på lenker. Fargekontraster er også brukt for å
+                    fremheve hvilken side man er på i navigasjonsbaren. </li>
+                <li><b>Skrift:</b> Vi har valgt en sans-seriff-skrifttype, da den ofte blir oppfattet som lettere å lese
+                    på skjerm og på skrift som er liten, noe som forbedrer brukeropplevelsen. Fet tekst er også brukt
+                    der det er hensiktsmessig, noe som også kan bidra til kontrast og bedre lesbarhet.</li>
+            </ul>
+            </p>
         </section>
         <section class="column-2 row-2">
             <h2>Responsivitet og skalering</h2>
-            <p>Siden er gjort responsiv og skaleres for både mindre smarttelefon-skjermer, laptop skjermer, og større, vide skjermer. Dette er gjort ved bruk av media queries, som hovedsakelig stabler seksjonene over hverandre for mindre skjermer, og justerer størrelsen på elementer for vide skjermer. </p>
-            <p>Tabeller er gjort responsive ved at de får en scroll-funksjon på mindre skjermer, avgrensningen er tilpasset en typisk skjermstørrelse på smarttelefoner (390 x 844 px). </p>
-            <p>Vi har også brukt relative enheter som em, rem og % i stedet for faste enheter som piksler (px) etter beste evne. Disse verdiene gir nettsiden muligheten til å tilpasse seg forskjellige skjermstørrelser, oppløsninger og brukerinnstillinger (for eksempel hvis man forstørrer tekststørrelsen). </p>
+            <p>Siden er gjort responsiv og skaleres for både mindre smarttelefon-skjermer, laptop skjermer, og større,
+                vide skjermer. Dette er gjort ved bruk av media queries, som hovedsakelig stabler seksjonene over
+                hverandre for mindre skjermer, og justerer størrelsen på elementer for vide skjermer. </p>
+            <p>Tabeller er gjort responsive ved at de får en scroll-funksjon på mindre skjermer, avgrensningen er
+                tilpasset en typisk skjermstørrelse på smarttelefoner (390 x 844 px). </p>
+            <p>Vi har også brukt relative enheter som em, rem og % i stedet for faste enheter som piksler (px) etter
+                beste evne. Disse verdiene gir nettsiden muligheten til å tilpasse seg forskjellige skjermstørrelser,
+                oppløsninger og brukerinnstillinger (for eksempel hvis man forstørrer tekststørrelsen). </p>
         </section>
         <section class="column-1 row-3">
             <h2>Accessibility-test</h2>
-            <p>Vi har testet siden med en automatisert accessiblity-test kalt Google Lighthouse. Testen ga oss en score på 100, for både desktop og mobil. </p>
+            <p>Vi har testet siden med en automatisert accessiblity-test kalt Google Lighthouse. Testen ga oss en score
+                på 100, for både desktop og mobil. </p>
         </section>
-        <section class="column-2 row-3">  
-            <div class="img-accessibility">  
-                <img src="img/accessibility/accessibility-score.png" alt="Skjermbilde fra resultat av test som viser score">
+        <section class="column-2 row-3">
+            <div class="img-accessibility">
+                <img src="img/accessibility/accessibility-score.png"
+                    alt="Skjermbilde fra resultat av test som viser score">
             </div>
         </section>
         <section class="column-1 row-4 img-accessibility">
-            <img src="img/accessibility/accessibility-audits.png" alt="Skjermbilde som viser tilbakemeldinger fra testen">
+            <img src="img/accessibility/accessibility-audits.png"
+                alt="Skjermbilde som viser tilbakemeldinger fra testen">
         </section>
-        <section class="column-2 row-4">    
+        <section class="column-2 row-4">
             <h3>Høydepunkter fra testen</h3>
             <p>Vi fikk flere "passed audits" på testen som vi ønsker å fremheve:</p>
             <ul>
@@ -105,13 +133,17 @@
                 </p>
             </div>
 
-             <!-- Sosiale medier og kontakt Oslomet -->
+            <!-- Sosiale medier og kontakt Oslomet -->
             <div class="footer-social-contact-section">
                 <nav class="footer-social-media">
-                    <a href="https://www.facebook.com/oslomet/"><img src="img/header-footer/facebook-logo.svg" alt="Facebook logo" class="social-media-logo"></a>
-                    <a href="https://twitter.com/oslomet"><img src="img/header-footer/twitter-logo.svg" alt="Twitter logo" class="social-media-logo"></a>
-                    <a href="https://no.linkedin.com/school/oslomet/"><img src="img/header-footer/linkedin-logo.svg" alt="Linkedin logo" class="social-media-logo"></a>
-                    <a href="https://www.instagram.com/oslomet/?hl=nb"><img src="img/header-footer/instagram-logo.svg" alt="Instagram logo" class="social-media-logo"></a>
+                    <a href="https://www.facebook.com/oslomet/"><img src="img/header-footer/facebook-logo.svg"
+                            alt="Facebook logo" class="social-media-logo"></a>
+                    <a href="https://twitter.com/oslomet"><img src="img/header-footer/twitter-logo.svg"
+                            alt="Twitter logo" class="social-media-logo"></a>
+                    <a href="https://no.linkedin.com/school/oslomet/"><img src="img/header-footer/linkedin-logo.svg"
+                            alt="Linkedin logo" class="social-media-logo"></a>
+                    <a href="https://www.instagram.com/oslomet/?hl=nb"><img src="img/header-footer/instagram-logo.svg"
+                            alt="Instagram logo" class="social-media-logo"></a>
                 </nav>
                 <p class="footer-contact-info">
                     <strong>Våre sosiale medier<br>KONTAKT OSS</strong><br>
@@ -119,6 +151,7 @@
                 </p>
             </div>
         </section>
-      </footer>
+    </footer>
 </body>
+
 </html>
