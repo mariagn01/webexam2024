@@ -1,27 +1,28 @@
 :root {
     --primary: #dac0ed;
     --activity: #022c63e6;
-}   
+}
 
-body{
+body {
     margin: 0px;
     font-family: sans-serif;
 }
 
-h1{
+h1 {
     text-align: center;
     font-family: sans-serif;
 }
 
 ul li {
-    margin-bottom: 10px; /* Mellomrom mellom liste-elementene */
+    margin-bottom: 10px;
+    /* Mellomrom mellom liste-elementene */
     font-family: sans-serif;
     line-height: 1.5;
 }
 
 /*Skillelinje for å dele opp og strukturere innholdet på siden*/
 .horizontal-line {
-    grid-column: 2 / span 2; 
+    grid-column: 2 / span 2;
     width: 100%;
     height: 0.1px;
     background-color: rgb(203, 203, 203);
@@ -30,7 +31,7 @@ ul li {
 }
 
 .small-divider {
-    grid-column: 2 / span 2; 
+    grid-column: 2 / span 2;
     width: 100%;
     height: 0.1px;
     background-color: rgb(203, 203, 203);
@@ -52,58 +53,70 @@ header h1 {
 
 .navbar {
     display: flex;
-    justify-content: space-between; /* Plasserer logoen til venstre og lenkene til høyre */
-    align-items: center; /* Vertikal sentrering av logoen og lenkene */
+    justify-content: space-between;
+    /* Plasserer logoen til venstre og lenkene til høyre */
+    align-items: center;
+    /* Vertikal sentrering av logoen og lenkene */
     padding: .5rem 1rem 0 1rem;
 }
 
-.logo img{
-    height: 40px; /* Juster høyden på logoen */
-    width: auto; /* Behold bildeproporsjonene */
+.logo img {
+    height: 40px;
+    /* Juster høyden på logoen */
+    width: auto;
+    /* Behold bildeproporsjonene */
     transition: transform .3s;
 }
 
-.logo img:hover{
+.logo img:hover {
     transform: scale(1.1);
 }
 
-.navbar ul{
-    list-style-type: none; /* Fjerner punktene */
-    padding: 0px; /*Fjerner padding */
-    margin: 0px; /*Fjerner margin */
-    display: flex; /*Setter lenkene på en rad*/
-    gap: 20px; /* Avstand mellom lenkene */
+.navbar ul {
+    list-style-type: none;
+    /* Fjerner punktene */
+    padding: 0px;
+    /*Fjerner padding */
+    margin: 0px;
+    /*Fjerner margin */
+    display: flex;
+    /*Setter lenkene på en rad*/
+    gap: 20px;
+    /* Avstand mellom lenkene */
 }
 
-.navbar a{
+.navbar a {
     color: #000000;
-    text-decoration: none; /*Fjerner underline*/
+    text-decoration: none;
+    /*Fjerner underline*/
     padding: 10px;
     display: block;
     text-align: center;
 }
 
-.navbar a:hover{
-    background-color: #f1e1fc; /*gjør bakgrunnsfargen lysere når musen peker der*/
+.navbar a:hover {
+    background-color: #f1e1fc;
+    /*gjør bakgrunnsfargen lysere når musen peker der*/
 }
 
-.navbar-activity a:hover{
+.navbar-activity a:hover {
     font-weight: 1000;
     background-color: initial;
     transition: all;
-}   
+}
 
-.navbar-activity a{
+.navbar-activity a {
     color: #ffffff;
 }
 
 
-.navbar li{
+.navbar li {
     display: inline-block;
 }
 
-.a-active{
-    background-color: #f1e1fc; /*gjør bakgrunnsfargen lysere når musen peker der*/
+.a-active {
+    background-color: #f1e1fc;
+    /*gjør bakgrunnsfargen lysere når musen peker der*/
 }
 
 /*Burgermeny*/
@@ -114,8 +127,10 @@ header h1 {
 }
 
 .burger-menu {
-    display: none; /* Skjuler burger-menyen */
-    flex-direction: column; /* Legger spans vertikalt */
+    display: none;
+    /* Skjuler burger-menyen */
+    flex-direction: column;
+    /* Legger spans vertikalt */
 }
 
 /* Stil for hvert element (span) i hamburger-menyen */
@@ -123,22 +138,26 @@ header h1 {
     display: block;
     width: 25px;
     height: 3px;
-    margin: 5px; /* Lager litt mellomrom mellom dem */
+    margin: 5px;
+    /* Lager litt mellomrom mellom dem */
     background-color: #000000;
     transition: 0.3s;
 }
 
-.burger-menu-activity{
-    display: none; /* Skjuler burger-menyen */
-    flex-direction: column; /* Legger spans vertikalt */
+.burger-menu-activity {
+    display: none;
+    /* Skjuler burger-menyen */
+    flex-direction: column;
+    /* Legger spans vertikalt */
 }
 
-.burger-menu-activity span{
+.burger-menu-activity span {
     background-color: white;
     display: block;
     width: 25px;
     height: 3px;
-    margin: 5px; /* Lager litt mellomrom mellom dem */
+    margin: 5px;
+    /* Lager litt mellomrom mellom dem */
     transition: 0.3s;
 }
 
@@ -150,16 +169,19 @@ p {
 }
 
 /*Lenker i hovedinnholdet*/
-.container a:link, .github-body a:link {
+.container a:link,
+.github-body a:link {
     color: black;
     text-decoration: underline;
-    text-decoration-color: #bc8ee0; 
-    text-underline-offset: 3px; /* Øker avstanden mellom tekst og strek */
+    text-decoration-color: #bc8ee0;
+    text-underline-offset: 3px;
+    /* Øker avstanden mellom tekst og strek */
     font-family: sans-serif;
 }
 
 /* Besøkt lenke */
-.container a:visited, .github-body a:visited {
+.container a:visited,
+.github-body a:visited {
     color: #4d1b74;
     text-decoration: underline;
     text-decoration-color: #bc8ee0;
@@ -168,7 +190,8 @@ p {
 }
 
 /* Musepeker over link */
-.container a:hover, .github-body a:hover {
+.container a:hover,
+.github-body a:hover {
     color: #8046ad;
     text-decoration: underline;
     text-decoration-color: #bc8ee0;
@@ -177,7 +200,8 @@ p {
 }
 
 /* Aktiv link */
-.container a:active, .github-body a:active {
+.container a:active,
+.github-body a:active {
     color: black;
     text-decoration: underline;
     text-decoration-color: #bc8ee0;
@@ -189,34 +213,40 @@ p {
 .container {
     display: grid;
     grid-template-rows: minmax(300px, auto);
-    grid-template-columns: 1fr minmax(40%, 1fr) minmax(40%, 1fr) 1fr;;
+    grid-template-columns: 1fr minmax(40%, 1fr) minmax(40%, 1fr) 1fr;
+    ;
     row-gap: 2rem;
     column-gap: 2rem;
 }
+
 /*Første og fjerde kolonne (1fr) fungerer som marger, andre og tredje kolonne har hovedinnhold. Begrenses til å ta opp minst 30% av siden og vokse om nødvendig, men ikke utover tilgjengelig plass.*/
 
 .column-1 {
-    grid-column: 2; /* Plasserer første kolonne i andre grid-kolonne for å midtstille */
+    grid-column: 2;
+    /* Plasserer første kolonne i andre grid-kolonne for å midtstille */
     padding: 20px;
-  }
+}
 
 .column-2 {
-    grid-column: 3; /* Plasserer andre kolonne i tredje grid-kolonne for å midtstille */
+    grid-column: 3;
+    /* Plasserer andre kolonne i tredje grid-kolonne for å midtstille */
     padding: 20px;
-  }
+}
 
 .container section {
-    padding: 1rem;  /*Padding i seksjonene*/
+    padding: 1rem;
+    /*Padding i seksjonene*/
 }
 
 /*Seksjoner som skal ha full bredde og ta opp begge kolonner i stedet for en*/
 .full-width {
-    grid-column: 2 / span 2; /* Strekker seg over både kolonne 2 og 3 */
+    grid-column: 2 / span 2;
+    /* Strekker seg over både kolonne 2 og 3 */
 }
 
 /*Beholder for indre horisontale kolonner*/
 .inner-columns {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     gap: 20px;
     padding: 0;
@@ -224,7 +254,8 @@ p {
 
 /*Indre kolonner*/
 .column {
-    flex: 1; /* Hver kolonne opptar like mye plass */
+    flex: 1;
+    /* Hver kolonne opptar like mye plass */
     padding: 2rem;
 }
 
@@ -242,7 +273,7 @@ p {
 }
 
 /*Ikoner*/
-#facts img{
+#facts img {
     max-width: 10%;
 }
 
@@ -256,37 +287,44 @@ p {
 /*Styling av tabell med studiets oppbygning*/
 .table-container {
     width: 100%;
-    overflow-x: scroll; /*Tillatter horisontal scrolling*/
-    -webkit-overflow-scrolling: touch; 
+    overflow-x: scroll;
+    /*Tillatter horisontal scrolling*/
+    -webkit-overflow-scrolling: touch;
 }
 
 table {
     width: 100%;
     min-width: 800px;
-    border-collapse: collapse; /* Slå sammen borders */
+    border-collapse: collapse;
+    /* Slå sammen borders */
     margin-bottom: 4%;
 }
 
-th, td {
-    border: 1px solid #aeaeae; /* Ramme for celler */
+th,
+td {
+    border: 1px solid #aeaeae;
+    /* Ramme for celler */
     padding: 1rem;
     text-align: left;
 }
 
 th {
-    background-color: var(--primary); /*Farge på tabellheader*/
+    background-color: var(--primary);
+    /*Farge på tabellheader*/
 }
 
 /*Studenthistorier*/
 .card {
     display: flex;
-    flex-direction: column; /* Gjør kortet til en kolonne */
+    flex-direction: column;
+    /* Gjør kortet til en kolonne */
     background-color: #f2e5fb;
     padding-top: 1rem;
 }
 
 /*Justerer overskrift og tekst i kortene*/
-.card h3, .card p {
+.card h3,
+.card p {
     padding: 0 1.5rem 0 1.5rem;
 }
 
@@ -303,6 +341,7 @@ th {
     justify-content: center;
     align-items: center;
 }
+
 .img-accessibility img {
     width: 85%;
     height: auto;
@@ -310,7 +349,7 @@ th {
 
 
 /*Footer*/
-.footer-wrapper{
+.footer-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -319,15 +358,17 @@ th {
     /*generell stil på footer*/
 }
 
-.footer-logo-section{
+.footer-logo-section {
     flex: 1;
     text-align: left;
     /*Plasserer logoen til venstre i footer*/
 }
 
-.footer-logo{
-    height: 100px; /* Juster høyden på logoen */
-    width: auto; /* Behold bildeproporsjonene */
+.footer-logo {
+    height: 100px;
+    /* Juster høyden på logoen */
+    width: auto;
+    /* Behold bildeproporsjonene */
 }
 
 .footer-address-section {
@@ -353,8 +394,9 @@ th {
     margin-bottom: 5px;
 }
 
-.footer-social-media a:not(:last-child){
-    margin-right: 10px; /* Lager mellomrom mellom sosiale medier ikonene */
+.footer-social-media a:not(:last-child) {
+    margin-right: 10px;
+    /* Lager mellomrom mellom sosiale medier ikonene */
 }
 
 .social-media-logo {
@@ -384,38 +426,47 @@ th {
 
 /*CSS til ny acticity page*/
 
-.sectionTop, .section1, .section2, .section3, .section4 {
+.sectionTop,
+.section1,
+.section2,
+.section3,
+.section4 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.sectionTop{
+
+.sectionTop {
     background-image: url("../img/activity/forside.jpg");
 }
 
 
-.section1{
+.section1 {
     background-image: url("../img/activity/gaming.jpg");
 }
 
-.section2{
+.section2 {
     background-image: url("../img/activity/lacrosse.jpg");
 }
 
-.section3{
+.section3 {
     background-image: url("../img/activity/sjakk.jpg");
 }
 
-.section4{
+.section4 {
     background-image: url("../img/activity/robotikk.jpg");
 }
 
-.activity-body > main {
+.activity-body>main {
     /* Setter verdier for main i activity-siden */
-    margin-top: 4.4rem; /* For å gi plass til navbaren */
-    overflow-y: scroll; /*scrolling vertikalt*/
-    scroll-snap-type: y mandatory;/*snapping kun vertikalt*/
-    height: 100vh; /*fullskjerm/hele visningsområdet*/
+    margin-top: 4.4rem;
+    /* For å gi plass til navbaren */
+    overflow-y: scroll;
+    /*scrolling vertikalt*/
+    scroll-snap-type: y mandatory;
+    /*snapping kun vertikalt*/
+    height: 100vh;
+    /*fullskjerm/hele visningsområdet*/
 }
 
 .activity-body {
@@ -423,38 +474,47 @@ th {
 }
 
 .header-activity {
-    position: fixed; /* For å holde navbaren på toppen */
+    position: fixed;
+    /* For å holde navbaren på toppen */
     top: 0;
     width: 100%;
-    z-index: 10; /* Sørger for at navbaren alltid er over innholdet */
-    background-color:  var(--activity); 
+    z-index: 10;
+    /* Sørger for at navbaren alltid er over innholdet */
+    background-color: var(--activity);
     color: white;
 }
 
-.activity-article > section {
+.activity-article>section {
     height: 100vh;
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Sentraliserer vertikalt */
-    align-items: center; /* Sentraliserer horisontalt */
+    justify-content: center;
+    /* Sentraliserer vertikalt */
+    align-items: center;
+    /* Sentraliserer horisontalt */
     scroll-snap-align: start;
 }
 
-.activity-article h1, .activity-article p {
+.activity-article h1,
+.activity-article p {
     color: white;
     border-radius: 1rem;
     text-align: center;
-    max-width: 80vw; /* Begrenser bredden på boksene */
-    margin: 0 auto; /* Sentraliserer boksene */
+    max-width: 80vw;
+    /* Begrenser bredden på boksene */
+    margin: 0 auto;
+    /* Sentraliserer boksene */
 }
 
 .activity-box {
     background-color: var(--activity);
     border-radius: 1rem;
     text-align: center;
-    max-width: 80vw; /* Begrenser bredden på boksene */
-    margin: 0 auto; /* Sentraliserer boksene */
+    max-width: 80vw;
+    /* Begrenser bredden på boksene */
+    margin: 0 auto;
+    /* Sentraliserer boksene */
     color: white;
     padding: 1rem;
 }
@@ -477,14 +537,14 @@ th {
     /*ENDRE FORMAT*/
 }
 
-.activity-box a{
+.activity-box a {
     text-decoration: none;
-    color: white; 
+    color: white;
     text-decoration: underline;
     transition: all .3s;
 }
 
-.activity-box a:hover{
+.activity-box a:hover {
     color: rgb(205, 96, 57);
     font-weight: 600;
 }
@@ -508,7 +568,7 @@ th {
 
 /* GITHUB PAGE */
 
-.github-body{
+.github-body {
     margin: 4rem 5rem;
 }
 
@@ -522,9 +582,9 @@ th {
 }
 */
 
-.flex-container img{
+.flex-container img {
     width: 40%;
-    object-fit:contain;
+    object-fit: contain;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5) !important;
     margin: 0 2rem;
 }
@@ -541,7 +601,7 @@ th {
     justify-content: space-evenly;
 }
 
-.github-text-box{
+.github-text-box {
     width: 600px;
     padding: 2rem 4rem;
 }
@@ -566,202 +626,206 @@ th {
 /*MOBILE VIEW - Skalering for liten skjerm*/
 @media (max-width: 800px) {
 
-/*Header*/
-/* Burger-ikonet */
-.navbar ul.menu {
-    display: none; /* Skjuler menyen */
-    flex-direction: column;
-    gap: 10px; /* Mellomrom mellom lenkene */
-    background-color: var(--primary);
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    width: 200px;
-    padding: 10px;
-    border: black solid 1.5px; /* Legger på en svart tynn ramme når man trykker på burgeren */
+    /*Header*/
+    /* Burger-ikonet */
+    .navbar ul.menu {
+        display: none;
+        /* Skjuler menyen */
+        flex-direction: column;
+        gap: 10px;
+        /* Mellomrom mellom lenkene */
+        background-color: var(--primary);
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 200px;
+        padding: 10px;
+        border: black solid 1.5px;
+        /* Legger på en svart tynn ramme når man trykker på burgeren */
+    }
+
+    .navbar ul.menu-activity {
+        background-color: var(--activity);
+    }
+
+    /* Viser burger-ikonet */
+    .burger-menu {
+        display: flex;
+        /* Flytter menyen til høyre */
+        float: right;
+        padding-top: 1.2rem;
+    }
+
+    .burger-menu-activity {
+        display: flex;
+        /* Flytter menyen til høyre */
+        float: right;
+        padding-top: 1.2rem;
+    }
+
+    /* Viser menyen når burger-ikonet er trykket på*/
+    #menu-toggle:checked+.burger-menu+.navbar ul.menu {
+        display: flex;
+    }
+
+    /*Main*/
+    * {
+        box-sizing: border-box;
+        /* Sikrer at padding og marginer ikke påvirker den totale bredden */
+    }
+
+    main {
+        margin: 0;
+        /*Nullstiller*/
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        /*Skalerer ned til en kolonne*/
+        grid-template-rows: auto;
+        max-width: 100%;
+        row-gap: 1rem;
+        /*Reduserer luften mellom seksjonene*/
+        column-gap: 1rem;
+    }
+
+    .column-1,
+    .column-2 {
+        grid-column: 1;
+        /* Hver kolonne tar opp hele bredden */
+        padding: 10px;
+        /* Mindre padding for mobil */
+    }
+
+    #facts {
+        flex-direction: row;
+    }
+
+    #facts li {
+        padding: 0;
+        font-size: 0.8rem;
+        /*Reduserer skriftstørrelse*/
+    }
+
+    .inner-columns {
+        flex-direction: column;
+        /* Stacker de indre kolonnene vertikalt */
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .column {
+        /*Justerer marger og padding for vertikal visning*/
+        margin: 3%;
+        padding: 5%;
+    }
+
+    .full-width {
+        grid-column: 1;
+        /* Full bredde for mobil */
+        padding: 10px;
+    }
+
+    .horizontal-line {
+        /*Fjerner den horisontale skillelinjen for små skjermer*/
+        display: none;
+    }
+
+    .table-container {
+        max-width: 360px;
+        /*Sikrer scroll-funksjon på tabellene på smarttelefon-skjermer med ca. 430 px bredde, og hindrer overflow*/
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        /*Justeringer for å gjøre tabell responsiv*/
+        min-width: 600px;
+        /*Sikrer scroll-funksjon*/
+    }
+
+    th,
+    td {
+        font-size: 0.9rem;
+        /* Mindre tekst og padding i tabell */
+        padding: 0.5rem;
+    }
+
+    /* Github-page */
+    /* Fjerner margin i x-aksen*/
+    .github-body {
+        margin: 4rem 0rem;
+    }
+
+    /* Gjør sånn at boksene passer skjermen*/
+    .github-text-box {
+        width: auto;
+    }
+
+    /* Gjør sånn at boksene kommer unnder hverandre*/
+    .flex-container {
+        flex-direction: column;
+    }
+
+    /*Endrer størrelse på bilder, samt midtstiller*/
+    .flex-container img {
+        width: 70%;
+        margin: 2rem auto;
+    }
+
+    .github-text-box-cont {
+        padding: 0;
+        width: 70%;
+    }
+
+    .github-img {
+        width: 70%;
+    }
+
+    /* Activity page */
+
+    .activity-article h1 {
+        font-size: 2rem;
+    }
+
+    .activity-article p {
+        padding: 1rem 0;
+        max-width: 80rem;
+    }
+
+    .activity-box {
+        max-width: 100vw;
+    }
+
+    /*Footer*/
+
+    /* Setter immholdet under hverandre ved skalering */
+    .footer-wrapper {
+        flex-direction: column;
+    }
+
+    /* Sentrerer tekst-innholdet i footer*/
+    .footer-social-contact-section {
+        text-align: center;
+    }
+
+    /* Lager rom mellom ikoner og adresse */
+    .footer-social-media {
+        padding-top: 8px;
+    }
 }
 
-.navbar ul.menu-activity {
-    background-color: var(--activity);
-}
 
-/* Viser burger-ikonet */
-.burger-menu {
-    display: flex;
-    /* Flytter menyen til høyre */
-    float: right;
-    padding-top: 1.2rem;
-}
-
-.burger-menu-activity {
-    display: flex;
-    /* Flytter menyen til høyre */
-    float: right;
-    padding-top: 1.2rem;
-}
-
-/* Viser menyen når burger-ikonet er trykket på*/
-#menu-toggle:checked + .burger-menu + .navbar ul.menu {
-    display: flex;
-}
-
-/*Main*/
-* {
-    box-sizing: border-box;
-    /* Sikrer at padding og marginer ikke påvirker den totale bredden */
-}
-
-main {
-    margin: 0;
-    /*Nullstiller*/
-    padding: 0;
-    max-width: 100%;
-}
-
-.container {
-    grid-template-columns: 1fr;
-    /*Skalerer ned til en kolonne*/
-    grid-template-rows: auto;
-    max-width: 100%;
-    row-gap: 1rem;
-    /*Reduserer luften mellom seksjonene*/
-    column-gap: 1rem;
-}
-
-.column-1,
-.column-2 {
-    grid-column: 1;
-    /* Hver kolonne tar opp hele bredden */
-    padding: 10px;
-    /* Mindre padding for mobil */
-}
-
-#facts {
-    flex-direction: row;
-}
-
-#facts li {
-    padding: 0;
-    font-size: 0.8rem;
-    /*Reduserer skriftstørrelse*/
-}
-
-.inner-columns {
-    flex-direction: column;
-    /* Stacker de indre kolonnene vertikalt */
-    justify-content: space-around;
-    padding: 10px;
-}
-
-.column {
-    /*Justerer marger og padding for vertikal visning*/
-    margin: 3%;
-    padding: 5%;
-}
-
-.full-width {
-    grid-column: 1;
-    /* Full bredde for mobil */
-    padding: 10px;
-}
-
-.horizontal-line {
-    /*Fjerner den horisontale skillelinjen for små skjermer*/
-    display: none;
-}
-
-.table-container {
-    max-width: 360px; /*Sikrer scroll-funksjon på tabellene på smarttelefon-skjermer med ca. 430 px bredde, og hindrer overflow*/
-    overflow-x: auto;
-}
-
-table {
-    width: 100%;
-    /*Justeringer for å gjøre tabell responsiv*/
-    min-width: 600px;
-    /*Sikrer scroll-funksjon*/
-}
-
-th,
-td {
-    font-size: 0.9rem;
-    /* Mindre tekst og padding i tabell */
-    padding: 0.5rem;
-}
-
-/* Github-page */
-/* Fjerner margin i x-aksen*/
-.github-body {
-    margin: 4rem 0rem;
-}
-
-/* Gjør sånn at boksene passer skjermen*/
-.github-text-box {
-    width: auto;
-}
-
-/* Gjør sånn at boksene kommer unnder hverandre*/
-.flex-container {
-    flex-direction: column;
-}
-
-/*Endrer størrelse på bilder, samt midtstiller*/
-.flex-container img {
-    width: 70%;
-    margin: 2rem auto;
-}
-
-.github-text-box-cont{
-    padding: 0;
-    width: 70%;
-}
-
-.github-img {
-    width: 70%;
-}
-
-/* Activity page */
-
-.activity-article h1 {
-    font-size: 2rem;
-}
-
-.activity-article p{
-    padding: 1rem 0;
-    max-width: 80rem;
-}
-
-.activity-box {
-    max-width: 100vw;
-}
-
-/*Footer*/
-
-/* Setter immholdet under hverandre ved skalering */
-.footer-wrapper {
-    flex-direction: column;
-}
-
-/* Sentrerer tekst-innholdet i footer*/
-.footer-social-contact-section {
-    text-align: center;
-}
-
-/* Lager rom mellom ikoner og adresse */
-.footer-social-media {
-    padding-top: 8px;
-}
-}
-
-
-@media (max-width: 1300px){
-    .vertical-line{
+@media (max-width: 1300px) {
+    .vertical-line {
         display: none;
     }
 
 }
+
 /*WIDE SCREEN - Skalering for stor skjerm*/
 @media (max-width: 1800px) {
     /*Teste på pc-skjermen hjemme*/
 }
-
