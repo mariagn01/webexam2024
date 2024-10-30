@@ -776,9 +776,9 @@ th {
     column-gap: 2rem;
   }
 
-  /* Justerer bildet på Accessibility som blir for stort på wide screen */
-.img-accessibility img {
-  width: 50%;
-  height: auto;
-}
+  /* Justerer bildet av skissen på Accessibility som blir for stort på wide screen */
+  #skisse {
+    width: 50%;
+    height: auto;
+  }
 }
