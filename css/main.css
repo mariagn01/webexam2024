@@ -97,6 +97,34 @@ header h1 {
     background-color: #f1e1fc; /*gjør bakgrunnsfargen lysere når musen peker der*/
 }
 
+/*Burgermeny*/
+#drp-menu-toggle {
+    display: none;
+    /* Ikonet er skjult når nav-baren vises */
+}
+
+#menu-toggle:checked ~ .menu {
+    display: block;
+}
+
+/* Animasjon for burger-ikonet når menyen er aktiv */
+#menu-toggle:checked + .burger span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+
+#menu-toggle:checked + .burger span:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle:checked + .burger span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Skjuler sjekkboksen */
+#menu-toggle {
+    display: none;
+}
+
 
 /*Hovedinnhold - index.html*/
 
@@ -504,15 +532,72 @@ th {
 
 /*MOBILE VIEW - Skalering for liten skjerm*/
 @media (max-width: 800px) {
+/*Header*/
 
-    /*Main*/
+/* Når sjekkboksen er merket, vis menyen */
 
+
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    background-color: #333;
+    display: none; /* Starter skjult */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+ul.menu li {
+    border-bottom: 1px solid #444;
+}
+
+ul.menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+ul.menu li a:hover {
+    background-color: #555;
+}
+
+/* Burger-ikonet */
+.burger-menu {
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.burger-menu span {
+    display: block;
+    height: 3px;
+    background-color: #333;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+
+/*Main*/
+
+    /* Fjerner margin i x-aksen*/
     .github-body{
-        margin: 4rem 0rem; /* Fjerner margin i x-aksen*/
+        margin: 4rem 0rem; 
     }
 
+    /* Gjør sånn at boksene passer skjermen*/
     .github-text-box{
-        width: auto; /* Gjør sånn at boksene passer skjermen*/
+        width: auto; 
     }
 
     /* Gjør sånn at boksene kommer unnder hverandre*/
@@ -525,6 +610,13 @@ th {
         width: 70%;
         margin: 2rem auto;
     }
+
+/*Footer*/
+
+/* Setter immholdet under hverandre ved skalering */
+.footer-wrapper {
+    flex-direction: column;
+}
    
 }
 
