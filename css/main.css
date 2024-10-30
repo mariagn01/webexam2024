@@ -1,5 +1,6 @@
 :root {
     --primary: #dac0ed;
+    --activity: #022c63e6;
 }   
 
 body{
@@ -116,6 +117,20 @@ header h1 {
     height: 3px;
     margin: 5px; /* Lager litt mellomrom mellom dem */
     background-color: #000000;
+    transition: 0.3s;
+}
+
+.burger-menu-activity{
+    display: none; /* Skjuler burger-menyen */
+    flex-direction: column; /* Legger spans vertikalt */
+}
+
+.burger-menu-activity span{
+    background-color: white;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px; /* Lager litt mellomrom mellom dem */
     transition: 0.3s;
 }
 
@@ -403,7 +418,8 @@ th {
     top: 0;
     width: 100%;
     z-index: 10; /* Sørger for at navbaren alltid er over innholdet */
-    background-color:  #022c63e6; 
+    background-color:  var(--activity); 
+    color: white;
 }
 
 .activity-article > section {
@@ -426,7 +442,7 @@ th {
 }
 
 .activity-box {
-    background-color: #022c63e6;
+    background-color: var(--activity);
     border-radius: 1rem;
     text-align: center;
     max-width: 80vw; /* Begrenser bredden på boksene */
@@ -532,7 +548,7 @@ th {
     display: none; /* Skjuler menyen */
     flex-direction: column;
     gap: 10px; /* Mellomrom mellom lenkene */
-    background-color: var(--primary);
+    background-color: var(--activity);
     position: absolute;
     top: 60px;
     right: 10px;
@@ -550,8 +566,15 @@ th {
     padding-top: 1.2rem;
 }
 
+.burger-menu-activity {
+    display: flex;
+    /* Flytter menyen til høyre */
+    float: right;
+    padding-top: 1.2rem;
+}
+
 /* Viser menyen når burger-ikonet er trykket på*/
-#menu-toggle:checked + .burger-menu + .navbar ul.menu {
+#menu-toggle:checked + .burger-menu-activity + .navbar ul.menu {
     display: flex;
 }
 
