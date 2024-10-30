@@ -537,6 +537,7 @@ th {
   align-items: center;
   background-color: var(--primary);
   padding: 60px;
+  margin-top: 2%;
 }
 
 .footer-logo-section {
@@ -769,6 +770,21 @@ th {
 }
 
 /*WIDE SCREEN - Skalering for stor skjerm*/
-@media (max-width: 1800px) {
-  /*Teste på pc-skjermen hjemme*/
+@media (min-width: 1800px) {
+  /* accessibility.html */
+
+  /* Tilpasser bredden på hovedinnholdet */
+  .container {
+    display: grid;
+    grid-template-rows: minmax(300px, auto);
+    grid-template-columns: 1fr minmax(35%, 1fr) minmax(35%, 1fr) 1fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
+  }
+
+  /* Justerer bildet på Accessibility som blir for stort på wide screen */
+.img-accessibility img {
+  width: 50%;
+  height: auto;
+}
 }
