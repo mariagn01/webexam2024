@@ -168,21 +168,20 @@ p {
 /*Seksjoner som skal ha full bredde og ta opp begge kolonner i stedet for en*/
 .full-width {
     grid-column: 2 / span 2; /* Strekker seg over både kolonne 2 og 3 */
-    padding: 20px;
 }
 
 /*Beholder for indre horisontale kolonner*/
 .inner-columns {
     display: flex; 
-    justify-content: space-between; 
-    padding: 20px;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0;
 }
 
 /*Indre kolonner*/
 .column {
     flex: 1; /* Hver kolonne opptar like mye plass */
-    margin: 0 10px;
-    padding: 20px;
+    padding: 2rem;
 }
 
 /*Kantlinje rundt spesialiseringene*/
@@ -241,18 +240,19 @@ th {
     padding-top: 1rem;
 }
 
+/*Justerer overskrift og tekst i kortene*/
 .card h3, .card p {
     padding: 0 1.5rem 0 1.5rem;
 }
 
+/*Justerer bildestørrelsen og plasserer bildet nederst*/
 .card img {
     margin-top: 1rem;
-    width: 100%; /*Justerer bildestørrelsen*/
-    align-self: flex-end; /* Plasserer bildet nederst */
+    width: 100%;
+    align-self: flex-end;
 }
 
 /*Hovedinnhold - Accessibility*/
-
 .img-accessibility {
     display: flex;
     justify-content: center;
