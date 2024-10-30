@@ -150,7 +150,7 @@ p {
 }
 
 /*Lenker i hovedinnholdet*/
-.container a:link {
+.container a:link, .github-body a:link {
     color: black;
     text-decoration: underline;
     text-decoration-color: #bc8ee0; 
@@ -159,7 +159,7 @@ p {
 }
 
 /* Besøkt lenke */
-.container a:visited {
+.container a:visited, .github-body a:visited {
     color: #4d1b74;
     text-decoration: underline;
     text-decoration-color: #bc8ee0;
@@ -168,7 +168,7 @@ p {
 }
 
 /* Musepeker over link */
-.container a:hover {
+.container a:hover, .github-body a:hover {
     color: #8046ad;
     text-decoration: underline;
     text-decoration-color: #bc8ee0;
@@ -177,7 +177,7 @@ p {
 }
 
 /* Aktiv link */
-.container a:active {
+.container a:active, .github-body a:active {
     color: black;
     text-decoration: underline;
     text-decoration-color: #bc8ee0;
