@@ -58,30 +58,34 @@ h1 {
 }
 
 .navbar li {
-    display: inline-block; /* Gjør elementene i listen horisontale i navigasjonsbaren */
+  display: inline-block; /* Gjør elementene i listen horisontale i navigasjonsbaren */
 }
 
 /* Lenker i navbar */
 .navbar a {
   color: #000000;
   text-decoration: none; /* Fjerner underline */
-  padding: 10px; 
+  padding: 10px;
   display: block; /* Gjør hele området klikkbart */
   text-align: center;
 }
 
 .navbar a:hover {
-  background-color: var(--secondary); /* Gjør bakgrunnsfargen lysere når musen peker der */
+  background-color: var(
+    --secondary
+  ); /* Gjør bakgrunnsfargen lysere når musen peker der */
 }
-  
+
 .a-active {
-    background-color: var(--secondary); /* Siden du er inne på er belyst i header */
+  background-color: var(
+    --secondary
+  ); /* Siden du er inne på er belyst i header */
 }
 
 /* Lenker i navbar til acticity gjøres hvit*/
 .navbar-activity a {
-    color: #ffffff;
-  }
+  color: #ffffff;
+}
 
 /* Styling ved hover i navbar på activity-siden */
 .navbar-activity a:hover {
@@ -129,14 +133,14 @@ h1 {
 /* index.html */
 
 /* Grid-container for å lage layout og strukturere innholdet */
-/* Første og fjerde kolonner er marger (1fr), andre og tredje har innhold, fyller minst 30% og kan utvide seg */ 
+/* Første og fjerde kolonner er marger (1fr), andre og tredje har innhold, fyller minst 30% og kan utvide seg */
 .container {
   display: grid;
   grid-template-rows: minmax(300px, auto);
   grid-template-columns: 1fr minmax(40%, 1fr) minmax(40%, 1fr) 1fr;
   row-gap: 2rem;
   column-gap: 2rem;
-} 
+}
 
 /* Skillelinje for å dele opp og strukturere innholdet på siden */
 .horizontal-line {
@@ -148,7 +152,7 @@ h1 {
   padding: 0.7px;
 }
 
-/* Mindre skillelinje */ 
+/* Mindre skillelinje */
 .small-divider {
   grid-column: 2 / span 2;
   width: 100%;
@@ -308,7 +312,7 @@ th {
   align-self: flex-end;
 }
 
-/*Hovedinnhold - Accessibility*/
+/* accessibility.html */
 .img-accessibility {
   display: flex;
   justify-content: center;
@@ -320,70 +324,86 @@ th {
   height: auto;
 }
 
-/*Footer*/
-.footer-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--primary);
-  padding: 60px;
-  /*generell stil på footer*/
+/* github.html */
+.github-body {
+  margin: 4rem 5rem;
 }
 
-.footer-logo-section {
-  flex: 1;
-  text-align: left;
-  /*Plasserer logoen til venstre i footer*/
-}
+/*
+  .img-left{
+      margin-right: 3rem;
+  }
+  
+  .img-right{
+      margin-left: 3rem;
+  }
+  */
 
-.footer-logo {
-  height: 100px;
-  /* Juster høyden på logoen */
-  width: auto;
-  /* Behold bildeproporsjonene */
-}
-
-.footer-address-section {
-  flex: 1;
-  text-align: center;
-  /*Plasserer adressen i midten i footer*/
-}
-
-.footer-address-text {
-  font-size: 14px;
-  line-height: 1.5;
-  margin: 0;
-  /*Redigerer tekst-adressen*/
-}
-
-.footer-social-contact-section {
-  flex: 1;
-  text-align: right;
-  /*Plasserer sosiale medier og kontakt til høyre i footer*/
-}
-
-.footer-social-media {
-  margin-bottom: 5px;
-}
-
-.footer-social-media a:not(:last-child) {
-  margin-right: 10px;
-  /* Lager mellomrom mellom sosiale medier ikonene */
-}
-
-.social-media-logo {
-  width: 30px;
-  height: auto;
-  /* Justerer størrelsene på ikonene */
-}
-
-.footer-contact-info {
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-.flex-box {
+.flex-container img {
   width: 40%;
+  object-fit: contain;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5) !important;
+  margin: 0 2rem;
+}
+
+.vertical-line {
+  background-color: rgb(203, 203, 203);
+  width: 2px;
+  margin: 0 1rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.github-text-box {
+  width: 600px;
+  padding: 2rem 4rem;
+}
+
+.github-text-box-cont {
+  width: 600px;
+  margin: 4rem auto !important;
+}
+
+.github-img-box {
+  display: flex;
+  justify-content: center;
+}
+
+.github-img {
+  width: 40%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5) !important;
+  margin: 0rem;
+}
+
+/* activity.html */
+/* Legger til bakgrunnsbilde for hver av seksjonene */
+.sectionTop {
+  background-image: url("../img/activity/forside.jpg");
+  /* Av Vasily Koloda fra https://unsplash.com/photos/group-of-fresh-graduates-students-throwing-their-academic-hat-in-the-air-8CqDvPuo_kI */
+}
+
+.section1 {
+  background-image: url("../img/activity/gaming.jpg");
+  /* Av Fábio Magalhães fra https://unsplash.com/photos/a-computer-screen-with-a-video-game-on-it-nmTm7knUnqs */
+}
+
+.section2 {
+  background-image: url("../img/activity/lacrosse.jpg");
+  /* Av Jeffrey F Lin fra https://unsplash.com/photos/girls-playing-lacrosse-game-ghbW5qujVdU */
+}
+
+.section3 {
+  background-image: url("../img/activity/sjakk.jpg");
+  /* Av GR Stocks fra https://unsplash.com/photos/grayscale-photo-of-person-holding-glass-Iq9SaJezkOE */
+}
+
+.section4 {
+  background-image: url("../img/activity/robotikk.jpg");
+  /* Av Dominik Scythe fra https://unsplash.com/photos/selective-photo-of-a-cars-character-toy-Sot0f3hQQ4Y */
 }
 
 .img-activity {
@@ -404,26 +424,6 @@ th {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.sectionTop {
-  background-image: url("../img/activity/forside.jpg");
-}
-
-.section1 {
-  background-image: url("../img/activity/gaming.jpg");
-}
-
-.section2 {
-  background-image: url("../img/activity/lacrosse.jpg");
-}
-
-.section3 {
-  background-image: url("../img/activity/sjakk.jpg");
-}
-
-.section4 {
-  background-image: url("../img/activity/robotikk.jpg");
 }
 
 .activity-body > main {
@@ -533,80 +533,81 @@ th {
   cursor: pointer;
 }
 
-/* GITHUB PAGE */
-
-.github-body {
-  margin: 4rem 5rem;
-}
-
-/*
-.img-left{
-    margin-right: 3rem;
-}
-
-.img-right{
-    margin-left: 3rem;
-}
-*/
-
-.flex-container img {
-  width: 40%;
-  object-fit: contain;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5) !important;
-  margin: 0 2rem;
-}
-
-.vertical-line {
-  background-color: rgb(203, 203, 203);
-  width: 2px;
-  margin: 0 1rem;
-}
-
-.flex-container {
+/* Footer */
+/* Generell styling av footer */
+.footer-wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+  padding: 60px;
 }
 
-.github-text-box {
-  width: 600px;
-  padding: 2rem 4rem;
+.footer-logo-section {
+  flex: 1; /* Lar seksjonen ta opp lik plass i flex-containeren */
+  text-align: left; /* Plasserer logoen til venstre i footer */
 }
 
-.github-text-box-cont {
-  width: 600px;
-  margin: 4rem auto !important;
+.footer-logo {
+  height: 100px; /* Juster høyden på logoen */
+  width: auto; /* Beholder bildeproporsjonene */
 }
 
-.github-img-box {
-  display: flex;
-  justify-content: center;
+.footer-address-section {
+  flex: 1;
+  text-align: center; /* Plasserer adressen i midten i footer */
 }
 
-.github-img {
-  width: 40%;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5) !important;
-  margin: 0rem;
+/* Redigerer tekst-adressen */
+.footer-address-text {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
 }
 
-/*MOBILE VIEW - Skalering for liten skjerm*/
+.footer-social-contact-section {
+  flex: 1;
+  text-align: right; /* Plasserer sosiale medier og kontakt til høyre i footer */
+}
+
+.footer-social-media {
+  margin-bottom: 5px; /* Avstand under seksjonen for sosial media */
+}
+
+.footer-social-media a:not(:last-child) {
+  margin-right: 10px; /* Lager mellomrom mellom sosiale medier ikonene */
+}
+
+/* Justerer størrelsene på ikonene */
+.social-media-logo {
+  width: 30px;
+  height: auto;
+}
+
+.footer-contact-info {
+  margin-top: 10px; /* Legger til avstand over seksjonen for kontaktinfo */
+  font-size: 14px;
+}
+
+.flex-box {
+  width: 40%; /* Setter bredden til 40% av det tilgjengelige området i flex-containeren */
+}
+
+/* MOBILE VIEW - Skalering for liten skjerm */
 @media (max-width: 800px) {
-  /*Header*/
+  /* Header */
   /* Burger-ikonet */
   .navbar ul.menu {
-    display: none;
-    /* Skjuler menyen */
+    display: none; /* Skjuler menyen */
     flex-direction: column;
-    gap: 10px;
-    /* Mellomrom mellom lenkene */
+    gap: 10px; /* Mellomrom mellom lenkene */
     background-color: var(--primary);
     position: absolute;
     top: 60px;
     right: 10px;
     width: 200px;
     padding: 10px;
-    border: black solid 1.5px;
-    /* Legger på en svart tynn ramme når man trykker på burgeren */
+    border: black solid 1.5px; /* Legger på en svart tynn ramme når man trykker på burgeren */
   }
 
   .navbar ul.menu-activity {
@@ -616,43 +617,31 @@ th {
   /* Viser burger-ikonet */
   .burger-menu {
     display: flex;
-    /* Flytter menyen til høyre */
-    float: right;
+    float: right; /* Flytter menyen til høyre */
     padding-top: 1.2rem;
   }
 
-  .burger-menu-activity {
-    display: flex;
-    /* Flytter menyen til høyre */
-    float: right;
-    padding-top: 1.2rem;
-  }
-
-  /* Viser menyen når burger-ikonet er trykket på*/
+  /* Viser menyen når burger-ikonet er trykket på */
   #menu-toggle:checked + .burger-menu + .navbar ul.menu {
     display: flex;
   }
 
-  /*Main*/
+  /* Main */
   * {
-    box-sizing: border-box;
-    /* Sikrer at padding og marginer ikke påvirker den totale bredden */
+    box-sizing: border-box; /* Sikrer at padding og marginer ikke påvirker den totale bredden */
   }
 
   main {
-    margin: 0;
-    /*Nullstiller*/
+    margin: 0; /* Nullstiller */
     padding: 0;
     max-width: 100%;
   }
 
   .container {
-    grid-template-columns: 1fr;
-    /*Skalerer ned til en kolonne*/
+    grid-template-columns: 1fr; /* Skalerer ned til en kolonne */
     grid-template-rows: auto;
     max-width: 100%;
-    row-gap: 1rem;
-    /*Reduserer luften mellom seksjonene*/
+    row-gap: 1rem; /* Reduserer luften mellom seksjonene */
     column-gap: 1rem;
   }
 
@@ -718,23 +707,23 @@ th {
     padding: 0.5rem;
   }
 
-  /* Github-page */
-  /* Fjerner margin i x-aksen*/
+  /* github.html - skalering */
+  /* Fjerner margin i x-aksen */
   .github-body {
     margin: 4rem 0rem;
   }
 
-  /* Gjør sånn at boksene passer skjermen*/
-  .github-text-box {
-    width: auto;
-  }
-
-  /* Gjør sånn at boksene kommer unnder hverandre*/
+  /* Gjør sånn at boksene kommer unnder hverandre */
   .flex-container {
     flex-direction: column;
   }
 
-  /*Endrer størrelse på bilder, samt midtstiller*/
+  /* Gjør sånn at boksene passer skjermen */
+  .github-text-box {
+    width: auto;
+  }
+
+  /* Endrer størrelse på bilder, samt midtstiller */
   .flex-container img {
     width: 70%;
     margin: 2rem auto;
@@ -742,49 +731,44 @@ th {
 
   .github-text-box-cont {
     padding: 0;
-    width: 70%;
+    width: 70%; /* Setter bredden til 70% av det tilgjengelige området */
   }
 
   .github-img {
-    width: 70%;
+    width: 70%; /* Setter bredden på bildet til 70% av det tilgjengelige området */
   }
 
-  /* Activity page */
-
+  /* activity.html - skalering*/
   .activity-article h1 {
-    font-size: 2rem;
+    font-size: 2rem; /* Endrer skriftstørrelsen til 2 rem ved skalering */
   }
 
   .activity-article p {
     padding: 1rem 0;
-    max-width: 80rem;
+    max-width: 80rem; /* Beholder maksimal bredde på avsnittet til 80 rem */
   }
 
   .activity-box {
-    max-width: 100vw;
+    max-width: 100vw; /* Setter maksimal bredde på boksen til 100% av viewport-bredden */
   }
 
-  /*Footer*/
-
-  /* Setter immholdet under hverandre ved skalering */
+  /* Footer - skalering */
   .footer-wrapper {
-    flex-direction: column;
+    flex-direction: column; /* Setter immholdet under hverandre ved skalering */
   }
 
-  /* Sentrerer tekst-innholdet i footer*/
   .footer-social-contact-section {
-    text-align: center;
+    text-align: center; /* Sentrerer tekst-innholdet i footer */
   }
 
-  /* Lager rom mellom ikoner og adresse */
   .footer-social-media {
-    padding-top: 8px;
+    padding-top: 8px; /* Lager rom mellom ikoner og adresse */
   }
 }
 
 @media (max-width: 1300px) {
   .vertical-line {
-    display: none;
+    display: none; /* Skjuler vertikale linjer når skjermbredden er 1300 piksler eller smalere */
   }
 }
 
