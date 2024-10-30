@@ -712,8 +712,8 @@ td {
 }
 
 .github-text-box-cont{
-    padding: 0 4rem;
-    width: auto;
+    padding: 0;
+    width: 70%;
 }
 
 .github-img {
@@ -751,6 +751,14 @@ td {
 .footer-social-media {
     padding-top: 8px;
 }
+}
+
+
+@media (max-width: 1300px){
+    .vertical-line{
+        display: none;
+    }
+
 }
 /*WIDE SCREEN - Skalering for stor skjerm*/
 @media (max-width: 1800px) {
