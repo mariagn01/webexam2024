@@ -104,21 +104,17 @@ header h1 {
     display: none;
 }
 
-.navbar ul.menu li a {
-    text-decoration: none;
-}
-
 .burger-menu {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+    display: none; /* Skjuler burger-menyen */
+    flex-direction: column; /* Legger spans vertikalt */
 }
 
+/* Stil for hvert element (span) i hamburger-menyen */
 .burger-menu span {
     display: block;
     width: 25px;
     height: 3px;
-    margin: 5px;
+    margin: 5px; /* Lager litt mellomrom mellom dem */
     background-color: #000000;
     transition: 0.3s;
 }
