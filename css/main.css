@@ -548,14 +548,17 @@ th {
     display: none; /* Skjuler menyen */
     flex-direction: column;
     gap: 10px; /* Mellomrom mellom lenkene */
-    background-color: var(--activity);
+    background-color: var(--primary);
     position: absolute;
     top: 60px;
     right: 10px;
     width: 200px;
     padding: 10px;
     border: black solid 1.5px; /* Legger på en svart tynn ramme når man trykker på burgeren */
+}
 
+.navbar ul.menu-activity {
+    background-color: var(--activity);
 }
 
 /* Viser burger-ikonet */
@@ -574,7 +577,7 @@ th {
 }
 
 /* Viser menyen når burger-ikonet er trykket på*/
-#menu-toggle:checked + .burger-menu-activity + .navbar ul.menu {
+#menu-toggle:checked + .burger-menu + .navbar ul.menu {
     display: flex;
 }
 
