@@ -546,6 +546,22 @@ th {
     padding: 2rem 4rem;
 }
 
+.github-text-box-cont {
+    width: 600px;
+    margin: 4rem auto !important;
+}
+
+.github-img-box {
+    display: flex;
+    justify-content: center;
+}
+
+.github-img {
+    width: 40%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5) !important;
+    margin: 0rem;
+}
+
 
 /*MOBILE VIEW - Skalering for liten skjerm*/
 @media (max-width: 800px) {
@@ -693,6 +709,15 @@ td {
 .flex-container img {
     width: 70%;
     margin: 2rem auto;
+}
+
+.github-text-box-cont{
+    padding: 0 4rem;
+    width: auto;
+}
+
+.github-img {
+    width: 70%;
 }
 
 /* Activity page */
