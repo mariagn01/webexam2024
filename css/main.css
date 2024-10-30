@@ -508,13 +508,19 @@ th {
     /*Main*/
 
     .github-body{
-        margin: 4rem 0rem;
+        margin: 4rem 0rem; /* Fjerner margin i x-aksen*/
     }
 
+    .github-text-box{
+        width: auto; /* Gjør sånn at boksene passer skjermen*/
+    }
+
+    /* Gjør sånn at boksene kommer unnder hverandre*/
     .flex-container {
         flex-direction: column;
     }
 
+    /*Endrer størrelse på bilder, samt midtstiller*/
     .flex-container img {
         width: 70%;
         margin: 2rem auto;
