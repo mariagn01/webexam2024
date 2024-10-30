@@ -645,7 +645,7 @@ main {
 }
 
 .table-container {
-    max-width: 400px; /*Sikrer scroll-funksjon på tabellene på smarttelefon-skjermer med ca. 430 px bredde, og hindrer overflow*/
+    max-width: 360px; /*Sikrer scroll-funksjon på tabellene på smarttelefon-skjermer med ca. 430 px bredde, og hindrer overflow*/
     overflow-x: auto;
 }
 
@@ -658,14 +658,6 @@ th, td {
     font-size: 0.9rem; /* Mindre tekst og padding i tabell */
     padding: 0.5rem;
 }
-
-
-
-
-
-
-
-
 
     /* Fjerner margin i x-aksen*/
     .github-body{
