@@ -99,18 +99,12 @@ header h1 {
 
 /*Burgermeny*/
 
+/* Skjuler checkbox*/
 #menu-toggle {
     display: none;
 }
 
-.navbar ul.menu {
-    list-style-type: none;
-    display: flex;
-    gap: 15px;
-}
-
 .navbar ul.menu li a {
-    color: white;
     text-decoration: none;
 }
 
@@ -125,7 +119,7 @@ header h1 {
     width: 25px;
     height: 3px;
     margin: 5px;
-    background-color: white;
+    background-color: #000000;
     transition: 0.3s;
 }
 
@@ -535,19 +529,21 @@ th {
 
 /*MOBILE VIEW - Skalering for liten skjerm*/
 @media (max-width: 800px) {
-/*Header*/
 
+/*Header*/
 /* Burger-ikonet */
 .navbar ul.menu {
     display: none; /* Skjuler menyen */
     flex-direction: column;
-    gap: 10px;
-    background-color: #333;
+    gap: 10px; /* Mellomrom mellom lenkene */
+    background-color: var(--primary);
     position: absolute;
     top: 60px;
     right: 10px;
     width: 200px;
     padding: 10px;
+    border: black solid 1.5px; /* Legger på en svart tynn ramme når man trykker på burgeren */
+
 }
 
 /* Viser burger-ikonet */
@@ -558,10 +554,11 @@ th {
     padding-top: 1.2rem;
 }
 
-/* Viser menyen når burger-ikonet er aktivert */
+/* Viser menyen når burger-ikonet er trykket på*/
 #menu-toggle:checked + .burger-menu + .navbar ul.menu {
     display: flex;
 }
+
 
 
 /*Main*/
