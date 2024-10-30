@@ -98,33 +98,36 @@ header h1 {
 }
 
 /*Burgermeny*/
-#drp-menu-toggle {
-    display: none;
-    /* Ikonet er skjult når nav-baren vises */
-}
 
-#menu-toggle:checked ~ .menu {
-    display: block;
-}
-
-/* Animasjon for burger-ikonet når menyen er aktiv */
-#menu-toggle:checked + .burger span:nth-child(1) {
-    transform: rotate(45deg) translateY(8px);
-}
-
-#menu-toggle:checked + .burger span:nth-child(2) {
-    opacity: 0;
-}
-
-#menu-toggle:checked + .burger span:nth-child(3) {
-    transform: rotate(-45deg) translateY(-8px);
-}
-
-/* Skjuler sjekkboksen */
 #menu-toggle {
     display: none;
 }
 
+.navbar ul.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar ul.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: white;
+    transition: 0.3s;
+}
 
 /*Hovedinnhold - index.html*/
 
@@ -534,57 +537,30 @@ th {
 @media (max-width: 800px) {
 /*Header*/
 
-/* Når sjekkboksen er merket, vis menyen */
-
-
-ul.menu {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    position: fixed;
+/* Burger-ikonet */
+.navbar ul.menu {
+    display: none; /* Skjuler menyen */
+    flex-direction: column;
+    gap: 10px;
+    background-color: #333;
+    position: absolute;
     top: 60px;
     right: 10px;
-    background-color: #333;
-    display: none; /* Starter skjult */
-    border-radius: 8px;
-    overflow: hidden;
+    width: 200px;
+    padding: 10px;
 }
 
-ul.menu li {
-    border-bottom: 1px solid #444;
-}
-
-ul.menu li a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 15px 20px;
-    text-align: center;
-}
-
-ul.menu li a:hover {
-    background-color: #555;
-}
-
-/* Burger-ikonet */
+/* Viser burger-ikonet */
 .burger-menu {
-    cursor: pointer;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 30px;
-    height: 25px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    /* Flytter menyen til høyre */
+    float: right;
+    padding-top: 1.2rem;
 }
 
-.burger-menu span {
-    display: block;
-    height: 3px;
-    background-color: #333;
-    border-radius: 3px;
-    transition: 0.3s;
+/* Viser menyen når burger-ikonet er aktivert */
+#menu-toggle:checked + .burger-menu + .navbar ul.menu {
+    display: flex;
 }
 
 
