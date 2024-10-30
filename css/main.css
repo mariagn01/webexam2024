@@ -168,21 +168,21 @@ p {
 /*Seksjoner som skal ha full bredde og ta opp begge kolonner i stedet for en*/
 .full-width {
     grid-column: 2 / span 2; /* Strekker seg over både kolonne 2 og 3 */
-    padding: 20px;
+    
 }
 
 /*Beholder for indre horisontale kolonner*/
 .inner-columns {
     display: flex; 
-    justify-content: space-between; 
-    padding: 20px;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0;
 }
 
 /*Indre kolonner*/
 .column {
     flex: 1; /* Hver kolonne opptar like mye plass */
-    margin: 0 10px;
-    padding: 20px;
+    padding: 2rem;
 }
 
 /*Kantlinje rundt spesialiseringene*/
