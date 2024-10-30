@@ -510,6 +510,15 @@ th {
     .github-body{
         margin: 4rem 0rem;
     }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-container img {
+        width: 70%;
+        margin: 2rem auto;
+    }
    
 }
 
