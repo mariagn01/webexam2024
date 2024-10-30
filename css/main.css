@@ -125,9 +125,20 @@ h1 {
   transition: 0.3s;
 }
 
-/*Hovedinnhold - index.html*/
+/* Hovedinnhold */
+/* index.html */
 
-/*Skillelinje for å dele opp og strukturere innholdet på siden*/
+/* Grid-container for å lage layout og strukturere innholdet */
+/* Første og fjerde kolonner er marger (1fr), andre og tredje har innhold, fyller minst 30% og kan utvide seg */ 
+.container {
+  display: grid;
+  grid-template-rows: minmax(300px, auto);
+  grid-template-columns: 1fr minmax(40%, 1fr) minmax(40%, 1fr) 1fr;
+  row-gap: 2rem;
+  column-gap: 2rem;
+} 
+
+/* Skillelinje for å dele opp og strukturere innholdet på siden */
 .horizontal-line {
   grid-column: 2 / span 2;
   width: 100%;
@@ -137,6 +148,7 @@ h1 {
   padding: 0.7px;
 }
 
+/* Mindre skillelinje */ 
 .small-divider {
   grid-column: 2 / span 2;
   width: 100%;
@@ -145,37 +157,34 @@ h1 {
   margin: 3% 0;
 }
 
-/*Linjeavstand for bedre lesbarhet*/
+/* Linjeavstand for bedre lesbarhet */
 p {
   line-height: 1.5;
 }
 
-/*Lenker i hovedinnholdet*/
+/* Lenker i hovedinnholdet */
 .container a:link,
 .github-body a:link {
   color: black;
   text-decoration: underline;
   text-decoration-color: #bc8ee0;
-  text-underline-offset: 3px;
-  /* Øker avstanden mellom tekst og strek */
+  text-underline-offset: 3px; /* Øker avstanden mellom tekst og strek */
   font-family: sans-serif;
 }
 
-/* Besøkt lenke */
+/* Besøkt lenke markeres med mørkere farge */
 .container a:visited,
 .github-body a:visited {
   color: #4d1b74;
-  text-decoration: underline;
   text-decoration-color: #bc8ee0;
   text-underline-offset: 3px;
   font-family: sans-serif;
 }
 
-/* Musepeker over link */
+/* Musepeker over link - annen farge */
 .container a:hover,
 .github-body a:hover {
   color: #8046ad;
-  text-decoration: underline;
   text-decoration-color: #bc8ee0;
   text-underline-offset: 3px;
   font-family: sans-serif;
@@ -185,47 +194,31 @@ p {
 .container a:active,
 .github-body a:active {
   color: black;
-  text-decoration: underline;
   text-decoration-color: #bc8ee0;
   text-underline-offset: 3px;
   font-family: sans-serif;
 }
 
-/*Grid-container for å lage layout og strukturere innholdet*/
-.container {
-  display: grid;
-  grid-template-rows: minmax(300px, auto);
-  grid-template-columns: 1fr minmax(40%, 1fr) minmax(40%, 1fr) 1fr;
-  row-gap: 2rem;
-  column-gap: 2rem;
-}
-
-/*Første og fjerde kolonne (1fr) fungerer som marger, andre og tredje kolonne har hovedinnhold. Begrenses til å ta opp minst 30% av siden og vokse om nødvendig, men ikke utover tilgjengelig plass.*/
-
 .column-1 {
-  grid-column: 2;
-  /* Plasserer første kolonne i andre grid-kolonne for å midtstille */
+  grid-column: 2; /* Plasserer første kolonne i andre grid-kolonne for å midtstille */
   padding: 20px;
 }
 
 .column-2 {
-  grid-column: 3;
-  /* Plasserer andre kolonne i tredje grid-kolonne for å midtstille */
+  grid-column: 3; /* Plasserer andre kolonne i tredje grid-kolonne for å midtstille */
   padding: 20px;
 }
 
 .container section {
-  padding: 1rem;
-  /*Padding i seksjonene*/
+  padding: 1rem; /* Padding i seksjonene */
 }
 
-/*Seksjoner som skal ha full bredde og ta opp begge kolonner i stedet for en*/
+/* Seksjoner som skal ha full bredde og ta opp begge kolonner i stedet for én */
 .full-width {
-  grid-column: 2 / span 2;
-  /* Strekker seg over både kolonne 2 og 3 */
+  grid-column: 2 / span 2; /* Strekker seg over både kolonne 2 og 3 */
 }
 
-/*Beholder for indre horisontale kolonner*/
+/* Beholder for indre horisontale kolonner */
 .inner-columns {
   display: flex;
   justify-content: space-between;
@@ -233,10 +226,9 @@ p {
   padding: 0;
 }
 
-/*Indre kolonner*/
+/* Indre kolonner */
 .column {
-  flex: 1;
-  /* Hver kolonne opptar like mye plass */
+  flex: 1; /* Hver kolonne opptar like mye plass */
   padding: 2rem;
 }
 
