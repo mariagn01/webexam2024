@@ -479,7 +479,7 @@ th {
 
 .flex-container img{
     width: 40%;
-    object-fit:fill;
+    object-fit:contain;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5) !important;
     margin: 0 2rem;
 }
