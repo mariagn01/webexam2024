@@ -414,8 +414,6 @@ th {
   margin: 0 10%;
 }
 
-/*CSS til ny acticity page*/
-
 .sectionTop,
 .section1,
 .section2,
@@ -491,7 +489,6 @@ th {
 .activity-article h1 {
   font-size: 4rem;
   /* Styling av h1 på topical-siden */
-  /*ENDRE FORMAT*/
 }
 
 .activity-article h2 {
@@ -503,7 +500,6 @@ th {
   font-size: 1.1rem;
   padding: 0 2rem 1rem 2rem;
   /* Styling av p på topicalsiden */
-  /*ENDRE FORMAT*/
 }
 
 .activity-box a {
