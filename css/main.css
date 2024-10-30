@@ -29,6 +29,14 @@ ul li {
     padding: 0.7px;
 }
 
+.small-divider {
+    grid-column: 2 / span 2; 
+    width: 100%;
+    height: 0.1px;
+    background-color: rgb(203, 203, 203);
+    margin: 3% 0;
+}
+
 /*Header*/
 header {
     background-color: var(--primary);
@@ -256,6 +264,7 @@ table {
     width: 100%;
     min-width: 800px;
     border-collapse: collapse; /* Slå sammen borders */
+    margin-bottom: 4%;
 }
 
 th, td {
@@ -584,6 +593,79 @@ th {
 
 
 /*Main*/
+ * {
+    box-sizing: border-box; /* Sikrer at padding og marginer ikke påvirker den totale bredden */
+}
+main {
+    margin: 0; /*Nullstiller*/
+    padding: 0;
+    max-width: 100%;
+}
+.container {
+    grid-template-columns: 1fr; /*Skalerer ned til en kolonne*/
+    grid-template-rows: auto; 
+    max-width: 100%;
+    row-gap: 1rem; /*Reduserer luften mellom seksjonene*/
+    column-gap: 1rem;
+}
+
+.column-1, .column-2 {
+    grid-column: 1; /* Hver kolonne tar opp hele bredden */
+    padding: 10px;  /* Mindre padding for mobil */
+}
+
+#facts {
+    flex-direction: row;
+}
+
+#facts li {
+    padding: 0;
+    font-size: 0.8rem; /*Reduserer skriftstørrelse*/
+}
+
+.inner-columns {
+    flex-direction: column; /* Stacker de indre kolonnene vertikalt */
+    justify-content: space-around;
+    padding: 10px; 
+}
+
+.column {
+    /*Justerer marger og padding for vertikal visning*/
+    margin: 3%;
+    padding: 5%;
+}
+
+.full-width {
+    grid-column: 1; /* Full bredde for mobil */
+    padding: 10px;
+}
+
+.horizontal-line { /*Fjerner den horisontale skillelinjen for små skjermer*/
+    display: none;
+}
+
+.table-container {
+    max-width: 400px; /*Sikrer scroll-funksjon på tabellene på smarttelefon-skjermer med ca. 430 px bredde, og hindrer overflow*/
+    overflow-x: auto;
+}
+
+table {
+    width: 100%; /*Justeringer for å gjøre tabell responsiv*/
+    min-width: 600px; /*Sikrer scroll-funksjon*/
+}
+
+th, td {
+    font-size: 0.9rem; /* Mindre tekst og padding i tabell */
+    padding: 0.5rem;
+}
+
+
+
+
+
+
+
+
 
     /* Fjerner margin i x-aksen*/
     .github-body{
