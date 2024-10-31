@@ -130,7 +130,7 @@ h1 {
 }
 
 /* Hovedinnhold */
-/* INDEX */
+/* index.html */
 
 /* Grid-container for å lage layout og strukturere innholdet */
 /* Første og fjerde kolonner er marger (1fr), andre og tredje har innhold, fyller minst 30% og kan utvide seg */
@@ -237,15 +237,9 @@ p {
 }
 
 .column-history{
-    padding: 0 !important;
-    margin: 2rem 0;
-    width: 100%;
-}
-
-.column-history{
-    padding: 0 !important;
-    margin: 2rem 0;
-    width: 100%;
+    padding: 0 !important; /* Fjerner all padding. */
+    margin: 2rem 0; /* Setter margin til 0 på sidene */
+    width: 100%; /* Elementet fyller hele bredden */
 }
 
 /*Kantlinje rundt spesialiseringene*/
