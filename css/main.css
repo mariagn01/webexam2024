@@ -70,16 +70,10 @@ h1 {
   text-align: center;
 }
 
-.navbar a:hover {
+.navbar a:hover, .a-active {
   background-color: var(
-    --secondary
-  ); /* Gjør bakgrunnsfargen lysere når musen peker der */
-}
-
-.a-active {
-  background-color: var(
-    --secondary
-  ); /* Siden du er inne på er belyst i header */
+    --secondary /* Gjør bakgrunnsfargen lysere når musen peker der, og markerer siden man er inne på i menyen */
+  );
 }
 
 /* Lenker i navbar til acticity gjøres hvit*/
