@@ -169,27 +169,18 @@ p {
 .container a:visited,
 .github-body a:visited {
   color: #4d1b74;
-  text-decoration-color: #bc8ee0;
-  text-underline-offset: 3px;
-  font-family: sans-serif;
 }
 
 /* Musepeker over link*/
 .container a:hover,
 .github-body a:hover {
   color: #8046ad;
-  text-decoration-color: #bc8ee0;
-  text-underline-offset: 3px;
-  font-family: sans-serif;
 }
 
 /* Aktiv link */
 .container a:active,
 .github-body a:active {
   color: black;
-  text-decoration-color: #bc8ee0;
-  text-underline-offset: 3px;
-  font-family: sans-serif;
 }
 
 /* Skillelinje for å dele opp og strukturere innholdet */
