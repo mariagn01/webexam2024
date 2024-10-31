@@ -70,16 +70,10 @@ h1 {
   text-align: center;
 }
 
-.navbar a:hover {
+.navbar a:hover, .a-active {
   background-color: var(
-    --secondary
-  ); /* Gjør bakgrunnsfargen lysere når musen peker der */
-}
-
-.a-active {
-  background-color: var(
-    --secondary
-  ); /* Siden du er inne på er belyst i header */
+    --secondary /* Gjør bakgrunnsfargen lysere når musen peker der, og markerer siden man er inne på i menyen */
+  );
 }
 
 /* Lenker i navbar til acticity gjøres hvit*/
@@ -184,27 +178,18 @@ p {
 .container a:visited,
 .github-body a:visited {
   color: #4d1b74;
-  text-decoration-color: #bc8ee0;
-  text-underline-offset: 3px;
-  font-family: sans-serif;
 }
 
 /* Musepeker over link*/
 .container a:hover,
 .github-body a:hover {
   color: #8046ad;
-  text-decoration-color: #bc8ee0;
-  text-underline-offset: 3px;
-  font-family: sans-serif;
 }
 
 /* Aktiv link */
 .container a:active,
 .github-body a:active {
   color: black;
-  text-decoration-color: #bc8ee0;
-  text-underline-offset: 3px;
-  font-family: sans-serif;
 }
 
 /* Skillelinje for å dele opp og strukturere innholdet */
@@ -236,7 +221,6 @@ p {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  padding: 0;
 }
 
 /* Indre kolonner */
