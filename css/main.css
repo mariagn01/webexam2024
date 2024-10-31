@@ -279,10 +279,9 @@ th {
 /* Kort for studenthistorier */
 .card {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Gjør kortet til en kolonne */
   justify-content: space-between;
   height: max-content;
-  /* Gjør kortet til en kolonne */
   background-color: #f2e5fb;
   padding-top: 1rem;
 }
