@@ -88,6 +88,15 @@ h1 {
   transition: all; /* Gir jevn overgang */
 }
 
+.header-activity {
+  position: fixed; /* For å holde navbaren på toppen */
+  top: 0;
+  width: 100%;
+  z-index: 10; /* Sørger for at navbaren alltid er over innholdet */
+  background-color: var(--activity);
+  color: white;
+}
+
 /*Burgermeny*/
 
 #menu-toggle {
@@ -315,26 +324,31 @@ th {
 
 /* github.html */
 .github-body {
-  margin: 4rem 5rem;
-}
-
-.flex-container img {
-  width: 40%;
-  object-fit: contain;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5) !important;
-  margin: 0 2rem;
-}
-
-.vertical-line {
-  background-color: rgb(203, 203, 203);
-  width: 2px;
-  margin: 0 1rem;
+  margin: 4rem 5rem; /* Setter en margin på hovedinnholdet på siden */
 }
 
 .flex-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: row; /* Plasserer elementene horisontalt */
+  justify-content: space-evenly; /* Forrdeler plassen jevnt mellom elementene */
+}
+
+.flex-container img {
+  width: 40%; /* Setter bildebredden til 40% av containeren */
+  object-fit: contain; /* Beholder proporsjonene til bilde */
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5) !important; /* Legger til en skyggeeffekt */
+  margin: 0 2rem;
+}
+
+.github-img-box {
+  display: flex;
+  justify-content: center; /* Justerer bildet til midten av containeren */
+}
+
+.github-img {
+  width: 40%; /* Setter bildebredde til 40% */
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5) !important; /* Skyggeeffekt */
+  margin: 0rem; /* Fjerner margn */
 }
 
 .github-text-box {
@@ -343,22 +357,40 @@ th {
 }
 
 .github-text-box-cont {
-  width: 600px;
+  width: 600px; /* Setter bredden på textboksen */
   margin: 4rem auto !important;
 }
 
-.github-img-box {
-  display: flex;
-  justify-content: center;
+.vertical-line {
+  background-color: rgb(203, 203, 203); /* Gir linjen en grå farge */
+  width: 2px; /* Linjebredden */
+  margin: 0 1rem;
 }
 
-.github-img {
-  width: 40%;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5) !important;
-  margin: 0rem;
+/* activity.html */
+.activity-body {
+  overflow: hidden; /* Skjuler overflow for å kontrollere plassering av innhold */
 }
 
-/*  activity.html */
+/* Hovedinnhold på activity-siden */
+.activity-body > main {
+  margin-top: 4.4rem; /* For å gi plass til navbaren */
+  overflow-y: scroll; /* Scrolling vertikalt*/
+  scroll-snap-type: y mandatory; /* Snapping kun vertikalt*/
+  height: 100vh; /* Fyller hele skjermhøyden */
+}
+
+/* Bakgrunnsbilder for hver seksjon */
+.sectionTop,
+.section1,
+.section2,
+.section3,
+.section4 {
+  background-size: cover; /* Dekke hele seksjonen */
+  background-position: center;
+  background-repeat: no-repeat; /* Hindrer gjentakelse av bildet */
+}
+
 /* Legger til bakgrunnsbilde for hver av seksjonene */
 .sectionTop {
   background-image: url("../img/activity/forside.jpg");
@@ -385,89 +417,29 @@ th {
   /* Av Dominik Scythe fra https://unsplash.com/photos/selective-photo-of-a-cars-character-toy-Sot0f3hQQ4Y */
 }
 
-.img-activity {
-  width: 100%;
-}
-
-.main-activity {
-  margin: 0 10%;
-}
-
-.sectionTop,
-.section1,
-.section2,
-.section3,
-.section4 {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.activity-body > main {
-  /* Setter verdier for main i activity-siden */
-  margin-top: 4.4rem;
-  /* For å gi plass til navbaren */
-  overflow-y: scroll;
-  /*scrolling vertikalt*/
-  scroll-snap-type: y mandatory;
-  /*snapping kun vertikalt*/
-  height: 100vh;
-  /*fullskjerm/hele visningsområdet*/
-}
-
-.activity-body {
-  overflow: hidden;
-}
-
-.header-activity {
-  position: fixed;
-  /* For å holde navbaren på toppen */
-  top: 0;
-  width: 100%;
-  z-index: 10;
-  /* Sørger for at navbaren alltid er over innholdet */
-  background-color: var(--activity);
-  color: white;
-}
-
+/* Seksjonsinnhold */
 .activity-article > section {
   height: 100vh;
   padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* Sentraliserer vertikalt */
-  align-items: center;
-  /* Sentraliserer horisontalt */
-  scroll-snap-align: start;
+  display: flex; /* Flex-layout for sentrering */
+  flex-direction: column; /* Plasserer elementer vertikalt */
+  justify-content: center; /* Sentraliserer vertikalt */
+  align-items: center; /* Sentraliserer horisontalt */
+  scroll-snap-align: start; /* Startpunkt for scroll-snap */
 }
 
+/* Styling av tekstinnhold */
 .activity-article h1,
 .activity-article p {
   color: white;
   border-radius: 1rem;
   text-align: center;
-  max-width: 80vw;
-  /* Begrenser bredden på boksene */
-  margin: 0 auto;
-  /* Sentraliserer boksene */
-}
-
-.activity-box {
-  background-color: var(--activity);
-  border-radius: 1rem;
-  text-align: center;
-  max-width: 80vw;
-  /* Begrenser bredden på boksene */
-  margin: 0 auto;
-  /* Sentraliserer boksene */
-  color: white;
-  padding: 1rem;
+  max-width: 80vw; /* Begrenser bredden på boksene */
+  margin: 0 auto; /* Sentraliserer boksene */
 }
 
 .activity-article h1 {
   font-size: 4rem;
-  /* Styling av h1 på topical-siden */
 }
 
 .activity-article h2 {
@@ -475,37 +447,56 @@ th {
 }
 
 .activity-article p {
-  max-width: 60vw;
+  max-width: 60vw; /* Begrenser bredden på teksten for bedre lesbarhet */
   font-size: 1.1rem;
   padding: 0 2rem 1rem 2rem;
-  /* Styling av p på topicalsiden */
+}
+
+/* Boks for tekstinnhold */
+.activity-box {
+  background-color: var(--activity);
+  border-radius: 1rem;
+  text-align: center;
+  max-width: 80vw; /* Begrenser bredden på boksene */
+  margin: 0 auto; /* Sentraliserer boksene */
+  color: white;
+  padding: 1rem;
 }
 
 .activity-box a {
-  text-decoration: none;
-  color: white;
-  text-decoration: underline;
-  transition: all 0.3s;
+  color: white; 
+  text-decoration: underline; /* Understreker linker */
+  transition: all 0.3s; /* Jevn overgang */
 }
 
+/* Endrer styling ved hover */
 .activity-box a:hover {
   color: rgb(205, 96, 57);
   font-weight: 600;
 }
 
+/* Styling av knapp i activity-box */
 .activity-box button {
   border: none;
   color: black;
   padding: 0.5rem;
   background-color: white;
   border-radius: 4px;
-  text-decoration: none;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; /* Overgangseffekt */
 }
 
 .activity-box button:hover {
-  opacity: 0.7;
-  cursor: pointer;
+  opacity: 0.7; /* Reduserer gjennomsiktighet ved hover */
+  cursor: pointer; /* Endrer markøren til peker */
+}
+
+/* Full bredde på bilder */
+.img-activity {
+  width: 100%;
+}
+
+.main-activity {
+  margin: 0 10%; /* Gir rom på begge sider av hovedinnholdet */
 }
 
 /* Footer */
