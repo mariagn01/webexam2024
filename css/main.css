@@ -130,7 +130,7 @@ h1 {
 }
 
 /* Hovedinnhold */
-/* index.html */
+/* INDEX */
 
 /* Grid-container for å lage layout og strukturere innholdet */
 /* Første og fjerde kolonner er marger (1fr), andre og tredje har innhold, fyller minst 30% og kan utvide seg */
@@ -142,26 +142,21 @@ h1 {
   column-gap: 2rem;
 }
 
-/* Skillelinje for å dele opp og strukturere innholdet på siden */
-.horizontal-line {
-  grid-column: 2 / span 2;
-  width: 100%;
-  height: 0.1px;
-  background-color: rgb(203, 203, 203);
-  margin: 0;
-  padding: 0.7px;
+.container section {
+  padding: 1rem; /* Padding i seksjonene */
 }
 
-/* Mindre skillelinje */
-.small-divider {
-  grid-column: 2 / span 2;
-  width: 100%;
-  height: 0.1px;
-  background-color: rgb(203, 203, 203);
-  margin: 3% 0;
+.column-1 {
+  grid-column: 2; /* Plasserer første kolonne i andre grid-kolonne for å midtstille */
+  padding: 20px;
 }
 
-/* Linjeavstand for bedre lesbarhet */
+.column-2 {
+  grid-column: 3; /* Plasserer andre kolonne i tredje grid-kolonne for å midtstille */
+  padding: 20px;
+}
+
+/* Justerer linjeavstand for bedre lesbarhet */
 p {
   line-height: 1.5;
 }
@@ -185,7 +180,7 @@ p {
   font-family: sans-serif;
 }
 
-/* Musepeker over link - annen farge */
+/* Musepeker over link*/
 .container a:hover,
 .github-body a:hover {
   color: #8046ad;
@@ -203,18 +198,23 @@ p {
   font-family: sans-serif;
 }
 
-.column-1 {
-  grid-column: 2; /* Plasserer første kolonne i andre grid-kolonne for å midtstille */
-  padding: 20px;
+/* Skillelinje for å dele opp og strukturere innholdet */
+.horizontal-line {
+  grid-column: 2 / span 2;
+  width: 100%;
+  height: 0.1px;
+  background-color: rgb(203, 203, 203);
+  margin: 0;
+  padding: 0.7px;
 }
 
-.column-2 {
-  grid-column: 3; /* Plasserer andre kolonne i tredje grid-kolonne for å midtstille */
-  padding: 20px;
-}
-
-.container section {
-  padding: 1rem; /* Padding i seksjonene */
+/* Mindre skillelinje for indre kolonner*/
+.small-divider {
+  grid-column: 2 / span 2;
+  width: 100%;
+  height: 0.1px;
+  background-color: rgb(203, 203, 203);
+  margin: 3% 0;
 }
 
 /* Seksjoner som skal ha full bredde og ta opp begge kolonner i stedet for én */
@@ -222,7 +222,7 @@ p {
   grid-column: 2 / span 2; /* Strekker seg over både kolonne 2 og 3 */
 }
 
-/* Beholder for indre horisontale kolonner */
+/* Beholder for indre kolonner i seksjoner med full bredde */
 .inner-columns {
   display: flex;
   justify-content: space-between;
@@ -242,11 +242,17 @@ p {
     width: 100%;
 }
 
-/*Kantlinje rundt spesialiseringene*/
-#spesialiseringer .column {
-  border: 2px solid #dac0ed;
+.column-history{
+    padding: 0 !important;
+    margin: 2rem 0;
+    width: 100%;
 }
 
+/*Kantlinje rundt spesialiseringene*/
+#spesialiseringer .column {
+    border: 2px solid #dac0ed;
+  }
+  
 /*Standard klasse for en liste uten kulepunkter og innrykk*/
 .nobullet-list {
   list-style-type: none;
@@ -255,48 +261,49 @@ p {
   line-height: 1.5;
 }
 
-/*Ikoner*/
-#facts img {
-  max-width: 10%;
-}
-
-/*Skrift i punktene med fakta*/
+/* Fakta om studiet */
 #facts li {
   padding-top: 1rem;
   font-size: 1rem;
   font-family: sans-serif;
 }
 
-/*Styling av tabell med studiets oppbygning*/
+/* Ikoner foran fakta om studiet */
+#facts img {
+  max-width: 10%;
+}
+
+/* Kantlinje rundt bokser med spesialiseringene */
+#spesialiseringer .column {
+  border: 2px solid #dac0ed;
+}
+
+/* Styling av tabell med studiets oppbygning */
 .table-container {
   width: 100%;
-  overflow-x: scroll;
-  /*Tillatter horisontal scrolling*/
-  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll; /* Tillatter horisontal scrolling, for å skalere når skjermen er liten */
+  -webkit-overflow-scrolling: touch; /* For mer naturlig rulling på berøringsskjermer */
 }
 
 table {
   width: 100%;
   min-width: 800px;
-  border-collapse: collapse;
-  /* Slå sammen borders */
+  border-collapse: collapse; /* Slår sammen kanter i tabellen så de ikke er doble */
   margin-bottom: 4%;
 }
 
 th,
 td {
-  border: 1px solid #aeaeae;
-  /* Ramme for celler */
+  border: 1px solid #aeaeae; /* Ramme for celler */
   padding: 1rem;
   text-align: left;
 }
 
 th {
-  background-color: var(--primary);
-  /*Farge på tabellheader*/
+  background-color: var(--primary); /* Farge på tabellheader */
 }
 
-/*Studenthistorier*/
+/* Kort for studenthistorier */
 .card {
   display: flex;
   flex-direction: column;
@@ -307,21 +314,22 @@ th {
   padding-top: 1rem;
 }
 
-/*Justerer overskrift og tekst i kortene*/
+/* Justerer overskrift og tekst i kortene */
 .card h3,
 .card p {
   padding: 0 1.5rem 0 1.5rem;
   height: 45px;
 }
 
-/*Justerer bildestørrelsen og plasserer bildet nederst*/
+/* Justerer bildene i kortene og plasserer de nederst */
 .card img {
   margin-top: 4rem;
   width: 100%;
   align-self: flex-end;
 }
 
-/* accessibility.html */
+/* ACCESSIBILITY */
+/* Justerer bildene på siden */
 .img-accessibility {
   display: flex;
   justify-content: center;
@@ -333,7 +341,7 @@ th {
   height: auto;
 }
 
-/* github.html */
+/* GITHUB */
 .github-body {
   margin: 4rem 5rem;
 }
@@ -388,7 +396,7 @@ th {
   margin: 0rem;
 }
 
-/* activity.html */
+/*  ACTIVITY */
 /* Legger til bakgrunnsbilde for hver av seksjonene */
 .sectionTop {
   background-image: url("../img/activity/forside.jpg");
@@ -546,6 +554,7 @@ th {
   align-items: center;
   background-color: var(--primary);
   padding: 60px;
+  margin-top: 2%;
 }
 
 .footer-logo-section {
@@ -648,7 +657,7 @@ th {
     display: flex;
   }
 
-  /* Main */
+  /* Hovedinnhold */
   * {
     box-sizing: border-box; /* Sikrer at padding og marginer ikke påvirker den totale bredden */
   }
@@ -660,7 +669,7 @@ th {
   }
 
   .container {
-    grid-template-columns: 1fr; /* Skalerer ned til en kolonne */
+    grid-template-columns: 1fr; /* Skalerer ned til én kolonne */
     grid-template-rows: auto;
     max-width: 100%;
     row-gap: 1rem; /* Reduserer luften mellom seksjonene */
@@ -669,64 +678,69 @@ th {
 
   .column-1,
   .column-2 {
-    grid-column: 1;
-    /* Hver kolonne tar opp hele bredden */
-    padding: 10px;
-    /* Mindre padding for mobil */
-  }
-
-  #facts {
-    flex-direction: row;
-  }
-
-  #facts li {
-    padding: 0;
-    font-size: 0.8rem;
-    /*Reduserer skriftstørrelse*/
+    grid-column: 1; /* Hver kolonne tar opp hele bredden */
+    padding: 10px; /* Mindre padding for mobil */
   }
 
   .inner-columns {
-    flex-direction: column;
-    /* Stacker de indre kolonnene vertikalt */
+    flex-direction: column; /* Setter de indre kolonnene vertikalt over hverandre */
     justify-content: space-around;
     padding: 10px;
   }
 
+  /* Justerer marger og padding for vertikal visning */
   .column {
-    /*Justerer marger og padding for vertikal visning*/
-    margin: 3%;
+     margin: 3%;
     padding: 5%;
   }
 
+  #facts{ 
+    flex-direction: row; /* Setter til row slik at faktakolonnene forblir ved siden av hverandre */
+  }
+
+  /* Justerer luft mellom faktaene */
+  #facts .column { 
+    gap: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  #facts li {
+    padding: 0;
+    font-size: 0.8rem; /* Reduserer skriftstørrelse */
+  }
+
   .full-width {
-    grid-column: 1;
-    /* Full bredde for mobil */
+    grid-column: 1; /* Full bredde */
     padding: 10px;
   }
 
   .horizontal-line {
-    /*Fjerner den horisontale skillelinjen for små skjermer*/
-    display: none;
+    display: none; /* Fjerner den horisontale skillelinjen for små skjermer */
   }
 
+  /* Justeringer for å gjøre tabell responsiv */
   .table-container {
-    max-width: 360px;
-    /*Sikrer scroll-funksjon på tabellene på smarttelefon-skjermer med ca. 430 px bredde, og hindrer overflow*/
+    max-width: 360px; /* Dette sikrer scroll-funksjon på tabellene på mindre skjermer med ca. 400 px bredde, og hindrer overflow */
     overflow-x: auto;
   }
 
   table {
     width: 100%;
-    /*Justeringer for å gjøre tabell responsiv*/
-    min-width: 600px;
-    /*Sikrer scroll-funksjon*/
+    min-width: 600px; /* Sikrer scroll-funksjon */
   }
 
+  /* Mindre tekst og padding i tabell */
   th,
   td {
-    font-size: 0.9rem;
-    /* Mindre tekst og padding i tabell */
+    font-size: 0.9rem; 
     padding: 0.5rem;
+  }
+
+  /* Index.html */
+
+  .card h3 {
+    height: 55px;
   }
 
   /* Index.html */
@@ -794,3 +808,27 @@ th {
   }
 }
 
+@media (max-width: 1300px) {
+  .vertical-line {
+    display: none; /* Skjuler vertikale linjer når skjermbredden er 1300 piksler eller smalere */
+  }
+}
+
+/*WIDE SCREEN - Skalering for stor skjerm*/
+@media (min-width: 1800px) {
+
+  /* Tilpasser bredden på hovedinnholdet */
+  .container {
+    display: grid;
+    grid-template-rows: minmax(300px, auto);
+    grid-template-columns: 1fr minmax(35%, 1fr) minmax(35%, 1fr) 1fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
+  }
+
+  /* Justerer bildet av skissen på Accessibility som blir for stort på wide screen */
+  #skisse {
+    width: 50%;
+    height: auto;
+  }
+}
