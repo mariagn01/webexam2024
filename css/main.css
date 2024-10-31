@@ -236,18 +236,18 @@ p {
   padding: 2rem;
 }
 
-.column-history{
-    padding: 0 !important; /* Fjerner all padding. */
-    margin: 2rem 0; /* Setter margin til 0 på sidene */
-    width: 100%; /* Elementet fyller hele bredden */
+.column-history {
+  padding: 0 !important; /* Fjerner all padding */
+  margin: 2rem 0; /* Setter margin til 0 på sidene */
+  width: 100%; /* Elementet fyller hele bredden */
 }
 
-/*Kantlinje rundt spesialiseringene*/
+/* Kantlinje rundt bokser med spesialiseringene */
 #spesialiseringer .column {
-    border: 2px solid #dac0ed;
-  }
-  
-/*Standard klasse for en liste uten kulepunkter og innrykk*/
+  border: 2px solid #dac0ed;
+}
+
+/* Standard klasse for en liste uten kulepunkter og innrykk */
 .nobullet-list {
   list-style-type: none;
   margin-left: 0;
@@ -265,11 +265,6 @@ p {
 /* Ikoner foran fakta om studiet */
 #facts img {
   max-width: 10%;
-}
-
-/* Kantlinje rundt bokser med spesialiseringene */
-#spesialiseringer .column {
-  border: 2px solid #dac0ed;
 }
 
 /* Styling av tabell med studiets oppbygning */
@@ -322,7 +317,7 @@ th {
   align-self: flex-end;
 }
 
-/* ACCESSIBILITY */
+/* accessibility.html */
 /* Justerer bildene på siden */
 .img-accessibility {
   display: flex;
@@ -335,20 +330,10 @@ th {
   height: auto;
 }
 
-/* GITHUB */
+/* github.html */
 .github-body {
   margin: 4rem 5rem;
 }
-
-/*
-  .img-left{
-      margin-right: 3rem;
-  }
-  
-  .img-right{
-      margin-left: 3rem;
-  }
-  */
 
 .flex-container img {
   width: 40%;
@@ -390,7 +375,7 @@ th {
   margin: 0rem;
 }
 
-/*  ACTIVITY */
+/*  activity.html */
 /* Legger til bakgrunnsbilde for hver av seksjonene */
 .sectionTop {
   background-image: url("../img/activity/forside.jpg");
@@ -601,22 +586,33 @@ th {
   width: 40%; /* Setter bredden til 40% av det tilgjengelige området i flex-containeren */
 }
 
- /*WIDE SCREEN - Skalering for stor skjerm*/
- @media (min-width: 1800px) {
-    /*Teste på pc-skjermen hjemme*/
-    .inner-columns {
-        height: fit-content;
-    }
+/* WIDE SCREEN - Skalering for stor skjerm */
+@media (min-width: 1800px) {
+  .inner-columns {
+    height: fit-content;
   }
-  
+
+  /* Tilpasser bredden på hovedinnholdet */
+  .container {
+    display: grid;
+    grid-template-rows: minmax(300px, auto);
+    grid-template-columns: 1fr minmax(35%, 1fr) minmax(35%, 1fr) 1fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
+  }
+
+  /* Justerer bildet av skissen på Accessibility som blir for stort på wide screen */
+  #skisse {
+    width: 50%;
+    height: auto;
+  }
+}
 
 @media (max-width: 1300px) {
-    .vertical-line {
-      display: none; /* Skjuler vertikale linjer når skjermbredden er 1300 piksler eller smalere */
-    }
+  .vertical-line {
+    display: none; /* Skjuler vertikale linjer når skjermbredden er 1300 piksler eller smalere */
   }
-  
- 
+}
 
 /* MOBILE VIEW - Skalering for liten skjerm */
 @media (max-width: 800px) {
@@ -684,16 +680,16 @@ th {
 
   /* Justerer marger og padding for vertikal visning */
   .column {
-     margin: 3%;
+    margin: 3%;
     padding: 5%;
   }
 
-  #facts{ 
+  #facts {
     flex-direction: row; /* Setter til row slik at faktakolonnene forblir ved siden av hverandre */
   }
 
   /* Justerer luft mellom faktaene */
-  #facts .column { 
+  #facts .column {
     gap: 0;
     padding: 0;
     margin: 0;
@@ -727,7 +723,7 @@ th {
   /* Mindre tekst og padding i tabell */
   th,
   td {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
     padding: 0.5rem;
   }
 
@@ -799,30 +795,5 @@ th {
 
   .footer-social-media {
     padding-top: 8px; /* Lager rom mellom ikoner og adresse */
-  }
-}
-
-@media (max-width: 1300px) {
-  .vertical-line {
-    display: none; /* Skjuler vertikale linjer når skjermbredden er 1300 piksler eller smalere */
-  }
-}
-
-/*WIDE SCREEN - Skalering for stor skjerm*/
-@media (min-width: 1800px) {
-
-  /* Tilpasser bredden på hovedinnholdet */
-  .container {
-    display: grid;
-    grid-template-rows: minmax(300px, auto);
-    grid-template-columns: 1fr minmax(35%, 1fr) minmax(35%, 1fr) 1fr;
-    row-gap: 2rem;
-    column-gap: 2rem;
-  }
-
-  /* Justerer bildet av skissen på Accessibility som blir for stort på wide screen */
-  #skisse {
-    width: 50%;
-    height: auto;
   }
 }
