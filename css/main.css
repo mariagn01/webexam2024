@@ -236,6 +236,12 @@ p {
   padding: 2rem;
 }
 
+.column-history{
+    padding: 0 !important;
+    margin: 2rem 0;
+    width: 100%;
+}
+
 /*Kantlinje rundt spesialiseringene*/
 #spesialiseringer .column {
   border: 2px solid #dac0ed;
@@ -294,6 +300,8 @@ th {
 .card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: max-content;
   /* Gjør kortet til en kolonne */
   background-color: #f2e5fb;
   padding-top: 1rem;
@@ -303,11 +311,12 @@ th {
 .card h3,
 .card p {
   padding: 0 1.5rem 0 1.5rem;
+  height: 45px;
 }
 
 /*Justerer bildestørrelsen og plasserer bildet nederst*/
 .card img {
-  margin-top: 1rem;
+  margin-top: 4rem;
   width: 100%;
   align-self: flex-end;
 }
@@ -589,6 +598,23 @@ th {
   width: 40%; /* Setter bredden til 40% av det tilgjengelige området i flex-containeren */
 }
 
+ /*WIDE SCREEN - Skalering for stor skjerm*/
+ @media (min-width: 1800px) {
+    /*Teste på pc-skjermen hjemme*/
+    .inner-columns {
+        height: fit-content;
+    }
+  }
+  
+
+@media (max-width: 1300px) {
+    .vertical-line {
+      display: none; /* Skjuler vertikale linjer når skjermbredden er 1300 piksler eller smalere */
+    }
+  }
+  
+ 
+
 /* MOBILE VIEW - Skalering for liten skjerm */
 @media (max-width: 800px) {
   /* Header */
@@ -703,6 +729,12 @@ th {
     padding: 0.5rem;
   }
 
+  /* Index.html */
+
+  .card h3 {
+    height: 55px;
+  }
+
   /* github.html - skalering */
   /* Fjerner margin i x-aksen */
   .github-body {
@@ -762,13 +794,3 @@ th {
   }
 }
 
-@media (max-width: 1300px) {
-  .vertical-line {
-    display: none; /* Skjuler vertikale linjer når skjermbredden er 1300 piksler eller smalere */
-  }
-}
-
-/*WIDE SCREEN - Skalering for stor skjerm*/
-@media (max-width: 1800px) {
-  /*Teste på pc-skjermen hjemme*/
-}
