@@ -491,6 +491,10 @@ th {
   cursor: pointer; /* Endrer markøren til peker */
 }
 
+.a-active-activity {
+    font-weight: bold; /* Gjør teksten tykkere når man er inne på siden */
+}
+
 /* Full bredde på bilder */
 .img-activity {
   width: 100%;
